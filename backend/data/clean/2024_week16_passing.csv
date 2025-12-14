@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Jared Goff,GoffJa00,2024-12-22,DET,@,CHI,"W, 34-17",23,32,336,3,0,137.0,2024,16
+Joe Burrow,BurrJo01,2024-12-22,CIN,,CLE,"W, 24-6",23,30,252,3,0,134.3,2024,16
+Lamar Jackson,JackLa00,2024-12-21,BAL,,PIT,"W, 34-17",15,23,207,3,1,115.4,2024,16
+Sam Darnold,DarnSa00,2024-12-22,MIN,@,SEA,"W, 27-24",22,35,246,3,0,112.3,2024,16
+Justin Herbert,HerbJu00,2024-12-19,LAC,,DEN,"W, 34-27",23,31,284,2,1,110.1,2024,16

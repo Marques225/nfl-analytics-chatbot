@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Lamar Jackson,2024-10-21,BAL,@,TAM,"W, 41-31",17,22,281,5,0,158.1,2024,7
-Jared Goff,2024-10-20,DET,@,MIN,"W, 31-29",22,25,280,2,0,140.0,2024,7
-Marcus Mariota,2024-10-20,WAS,,CAR,"W, 40-7",18,23,205,2,0,132.8,2024,7
-Trevor Lawrence,2024-10-20,JAX,,NWE,"W, 32-16",15,20,193,1,0,121.5,2024,7
-Jalen Hurts,2024-10-20,PHI,@,NYG,"W, 28-3",10,14,114,1,0,119.3,2024,7
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Lamar Jackson,JackLa00,2024-10-21,BAL,@,TAM,"W, 41-31",17,22,281,5,0,158.1,2024,7
+Jared Goff,GoffJa00,2024-10-20,DET,@,MIN,"W, 31-29",22,25,280,2,0,140.0,2024,7
+Marcus Mariota,MariMa01,2024-10-20,WAS,,CAR,"W, 40-7",18,23,205,2,0,132.8,2024,7
+Trevor Lawrence,LawrTr00,2024-10-20,JAX,,NWE,"W, 32-16",15,20,193,1,0,121.5,2024,7
+Jalen Hurts,HurtJa00,2024-10-20,PHI,@,NYG,"W, 28-3",10,14,114,1,0,119.3,2024,7

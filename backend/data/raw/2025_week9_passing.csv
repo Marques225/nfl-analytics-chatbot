@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Lamar Jackson,2025-10-30,BAL,@,MIA,"W, 28-6",18,23,204,4,0,143.2,2025,9
-Sam Darnold,2025-11-02,SEA,@,WAS,"W, 38-14",21,24,330,4,1,141.0,2025,9
-Matthew Stafford,2025-11-02,LAR,,NOR,"W, 34-10",24,32,281,4,0,140.8,2025,9
-Mac Jones,2025-11-02,SFO,@,NYG,"W, 34-24",19,24,235,2,0,135.2,2025,9
-Josh Allen,2025-11-02,BUF,,KAN,"W, 28-21",23,26,273,1,0,123.2,2025,9
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Lamar Jackson,JackLa00,2025-10-30,BAL,@,MIA,"W, 28-6",18,23,204,4,0,143.2,2025,9
+Sam Darnold,DarnSa00,2025-11-02,SEA,@,WAS,"W, 38-14",21,24,330,4,1,141.0,2025,9
+Matthew Stafford,StafMa00,2025-11-02,LAR,,NOR,"W, 34-10",24,32,281,4,0,140.8,2025,9
+Mac Jones,JoneMa05,2025-11-02,SFO,@,NYG,"W, 34-24",19,24,235,2,0,135.2,2025,9
+Josh Allen,AlleJo02,2025-11-02,BUF,,KAN,"W, 28-21",23,26,273,1,0,123.2,2025,9

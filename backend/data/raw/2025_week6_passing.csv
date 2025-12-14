@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Drake Maye,2025-10-12,NWE,@,NOR,"W, 25-19",18,26,261,3,0,140.1,2025,6
-Baker Mayfield,2025-10-12,TAM,,SFO,"W, 30-19",17,23,256,2,0,139.0,2025,6
-Patrick Mahomes,2025-10-12,KAN,,DET,"W, 30-17",22,30,257,3,0,132.2,2025,6
-Dak Prescott,2025-10-12,DAL,@,CAR,"L, 27-30",25,34,261,3,0,124.8,2025,6
-Sam Darnold,2025-10-12,SEA,@,JAX,"W, 20-12",16,27,295,2,0,121.7,2025,6
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Drake Maye,MayeDr00,2025-10-12,NWE,@,NOR,"W, 25-19",18,26,261,3,0,140.1,2025,6
+Baker Mayfield,MayfBa00,2025-10-12,TAM,,SFO,"W, 30-19",17,23,256,2,0,139.0,2025,6
+Patrick Mahomes,MahoPa00,2025-10-12,KAN,,DET,"W, 30-17",22,30,257,3,0,132.2,2025,6
+Dak Prescott,PresDa01,2025-10-12,DAL,@,CAR,"L, 27-30",25,34,261,3,0,124.8,2025,6
+Sam Darnold,DarnSa00,2025-10-12,SEA,@,JAX,"W, 20-12",16,27,295,2,0,121.7,2025,6

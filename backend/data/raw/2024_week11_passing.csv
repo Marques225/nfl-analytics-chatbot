@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Jared Goff,2024-11-17,DET,,JAX,"W, 52-6",24,29,412,4,0,158.3,2024,11
-Bo Nix,2024-11-17,DEN,,ATL,"W, 38-6",28,33,307,4,0,145.0,2024,11
-Matthew Stafford,2024-11-17,LAR,@,NWE,"W, 28-22",18,27,295,4,0,142.7,2024,11
-Derek Carr,2024-11-17,NOR,,CLE,"W, 35-14",21,27,248,2,0,129.6,2024,11
-Tua Tagovailoa,2024-11-17,MIA,,LVR,"W, 34-19",28,36,288,3,0,127.8,2024,11
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Jared Goff,GoffJa00,2024-11-17,DET,,JAX,"W, 52-6",24,29,412,4,0,158.3,2024,11
+Bo Nix,NixxBo00,2024-11-17,DEN,,ATL,"W, 38-6",28,33,307,4,0,145.0,2024,11
+Matthew Stafford,StafMa00,2024-11-17,LAR,@,NWE,"W, 28-22",18,27,295,4,0,142.7,2024,11
+Derek Carr,CarrDe02,2024-11-17,NOR,,CLE,"W, 35-14",21,27,248,2,0,129.6,2024,11
+Tua Tagovailoa,TagoTu00,2024-11-17,MIA,,LVR,"W, 34-19",28,36,288,3,0,127.8,2024,11

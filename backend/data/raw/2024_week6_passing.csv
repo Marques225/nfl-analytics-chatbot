@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Jared Goff,2024-10-13,DET,@,DAL,"W, 47-9",18,25,315,3,0,153.7,2024,6
-Brock Purdy,2024-10-10,SFO,@,SEA,"W, 36-24",18,28,255,3,0,129.3,2024,6
-Josh Allen,2024-10-14,BUF,@,NYJ,"W, 23-20",19,25,215,2,0,127.9,2024,6
-Jalen Hurts,2024-10-13,PHI,,CLE,"W, 20-16",16,25,264,2,0,126.1,2024,6
-Caleb Williams,2024-10-13,CHI,,JAX,"W, 35-16",23,29,226,4,1,124.4,2024,6
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Jared Goff,GoffJa00,2024-10-13,DET,@,DAL,"W, 47-9",18,25,315,3,0,153.7,2024,6
+Brock Purdy,PurdBr00,2024-10-10,SFO,@,SEA,"W, 36-24",18,28,255,3,0,129.3,2024,6
+Josh Allen,AlleJo02,2024-10-14,BUF,@,NYJ,"W, 23-20",19,25,215,2,0,127.9,2024,6
+Jalen Hurts,HurtJa00,2024-10-13,PHI,,CLE,"W, 20-16",16,25,264,2,0,126.1,2024,6
+Caleb Williams,WillCa03,2024-10-13,CHI,,JAX,"W, 35-16",23,29,226,4,1,124.4,2024,6

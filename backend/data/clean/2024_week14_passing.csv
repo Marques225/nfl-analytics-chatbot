@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Sam Darnold,DarnSa00,2024-12-08,MIN,,ATL,"W, 42-21",22,28,347,5,0,157.9,2024,14
+Brock Purdy,PurdBr00,2024-12-08,SFO,,CHI,"W, 38-13",20,25,325,2,0,145.4,2024,14
+Matthew Stafford,StafMa00,2024-12-08,LAR,,BUF,"W, 44-42",23,30,320,2,0,132.6,2024,14
+Josh Allen,AlleJo02,2024-12-08,BUF,@,LAR,"L, 42-44",22,37,342,3,0,117.2,2024,14
+Caleb Williams,WillCa03,2024-12-08,CHI,@,SFO,"L, 13-38",17,23,134,2,0,116.9,2024,14

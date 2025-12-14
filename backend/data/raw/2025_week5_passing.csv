@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Jared Goff,2025-10-05,DET,@,CIN,"W, 37-24",19,23,258,3,0,153.0,2025,5
-C.J. Stroud,2025-10-05,HOU,@,BAL,"W, 44-10",23,27,244,4,0,143.9,2025,5
-Sam Darnold,2025-10-05,SEA,,TAM,"L, 35-38",28,34,341,4,1,135.4,2025,5
-Baker Mayfield,2025-10-05,TAM,@,SEA,"W, 38-35",29,33,379,2,0,134.7,2025,5
-Dak Prescott,2025-10-05,DAL,@,NYJ,"W, 37-22",18,29,237,4,0,127.4,2025,5
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Jared Goff,GoffJa00,2025-10-05,DET,@,CIN,"W, 37-24",19,23,258,3,0,153.0,2025,5
+C.J. Stroud,StroCJ00,2025-10-05,HOU,@,BAL,"W, 44-10",23,27,244,4,0,143.9,2025,5
+Sam Darnold,DarnSa00,2025-10-05,SEA,,TAM,"L, 35-38",28,34,341,4,1,135.4,2025,5
+Baker Mayfield,MayfBa00,2025-10-05,TAM,@,SEA,"W, 38-35",29,33,379,2,0,134.7,2025,5
+Dak Prescott,PresDa01,2025-10-05,DAL,@,NYJ,"W, 37-22",18,29,237,4,0,127.4,2025,5

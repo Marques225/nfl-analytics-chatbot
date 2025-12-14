@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Drew Lock,2024-12-29,NYG,,IND,"W, 45-33",17,23,309,4,0,155.3,2024,17
-Baker Mayfield,2024-12-29,TAM,,CAR,"W, 48-14",27,32,359,5,0,153.0,2024,17
-Lamar Jackson,2024-12-25,BAL,@,HOU,"W, 31-2",10,15,168,2,0,143.9,2024,17
-Jared Goff,2024-12-30,DET,@,SFO,"W, 40-34",26,34,303,3,0,132.4,2024,17
-Tyrod Taylor,2024-12-29,NYJ,@,BUF,"L, 14-40",11,14,83,2,0,131.0,2024,17
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Drew Lock,LockDr00,2024-12-29,NYG,,IND,"W, 45-33",17,23,309,4,0,155.3,2024,17
+Baker Mayfield,MayfBa00,2024-12-29,TAM,,CAR,"W, 48-14",27,32,359,5,0,153.0,2024,17
+Lamar Jackson,JackLa00,2024-12-25,BAL,@,HOU,"W, 31-2",10,15,168,2,0,143.9,2024,17
+Jared Goff,GoffJa00,2024-12-30,DET,@,SFO,"W, 40-34",26,34,303,3,0,132.4,2024,17
+Tyrod Taylor,TaylTy00,2024-12-29,NYJ,@,BUF,"L, 14-40",11,14,83,2,0,131.0,2024,17

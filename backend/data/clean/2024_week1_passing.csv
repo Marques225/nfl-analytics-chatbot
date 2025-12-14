@@ -1,4 +1,6 @@
-0,1,2
-"Sep 5, 2024","Sep 5, 2024","Sep 5, 2024"
-Baltimore Ravens,20,Final
-Kansas City Chiefs,27,
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Baker Mayfield,MayfBa00,2024-09-08,TAM,,WAS,"W, 37-20",24,30,289,4,0,146.4,2024,1
+Derek Carr,CarrDe02,2024-09-08,NOR,,CAR,"W, 47-10",19,23,200,3,0,142.5,2024,1
+Josh Allen,AlleJo02,2024-09-08,BUF,,ARI,"W, 34-28",18,23,232,2,0,137.7,2024,1
+C.J. Stroud,StroCJ00,2024-09-08,HOU,@,IND,"W, 29-27",24,32,234,2,0,115.9,2024,1
+Sam Darnold,DarnSa00,2024-09-08,MIN,@,NYG,"W, 28-6",19,24,208,2,1,113.2,2024,1

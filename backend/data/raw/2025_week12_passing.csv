@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Matthew Stafford,2025-11-23,LAR,,TAM,"W, 34-7",25,35,273,3,0,122.7,2025,12
-Sam Darnold,2025-11-23,SEA,@,TEN,"W, 30-24",16,26,244,2,0,118.1,2025,12
-Kirk Cousins,2025-11-23,ATL,@,NOR,"W, 24-10",16,23,199,2,1,107.0,2025,12
-Caleb Williams,2025-11-23,CHI,,PIT,"W, 31-28",19,35,239,3,0,104.3,2025,12
-Dak Prescott,2025-11-23,DAL,,PHI,"W, 24-21",23,36,354,2,1,103.2,2025,12
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Matthew Stafford,StafMa00,2025-11-23,LAR,,TAM,"W, 34-7",25,35,273,3,0,122.7,2025,12
+Sam Darnold,DarnSa00,2025-11-23,SEA,@,TEN,"W, 30-24",16,26,244,2,0,118.1,2025,12
+Kirk Cousins,CousKi00,2025-11-23,ATL,@,NOR,"W, 24-10",16,23,199,2,1,107.0,2025,12
+Caleb Williams,WillCa03,2025-11-23,CHI,,PIT,"W, 31-28",19,35,239,3,0,104.3,2025,12
+Dak Prescott,PresDa01,2025-11-23,DAL,,PHI,"W, 24-21",23,36,354,2,1,103.2,2025,12

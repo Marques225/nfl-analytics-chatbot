@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Dak Prescott,2025-11-17,DAL,@,LVR,"W, 33-16",25,33,268,4,0,138.6,2025,11
-Brock Purdy,2025-11-16,SFO,@,ARI,"W, 41-22",19,26,200,3,0,133.5,2025,11
-Bryce Young,2025-11-16,CAR,@,ATL,"W, 30-27",31,45,448,3,0,123.2,2025,11
-Mason Rudolph,2025-11-16,PIT,,CIN,"W, 34-12",12,16,127,1,0,118.5,2025,11
-Michael Penix,2025-11-16,ATL,,CAR,"L, 27-30",13,16,175,0,0,112.2,2025,11
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Dak Prescott,PresDa01,2025-11-17,DAL,@,LVR,"W, 33-16",25,33,268,4,0,138.6,2025,11
+Brock Purdy,PurdBr00,2025-11-16,SFO,@,ARI,"W, 41-22",19,26,200,3,0,133.5,2025,11
+Bryce Young,YounBr01,2025-11-16,CAR,@,ATL,"W, 30-27",31,45,448,3,0,123.2,2025,11
+Mason Rudolph,RudoMa00,2025-11-16,PIT,,CIN,"W, 34-12",12,16,127,1,0,118.5,2025,11
+Michael Penix,PeniMi00,2025-11-16,ATL,,CAR,"L, 27-30",13,16,175,0,0,112.2,2025,11

@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Drake Maye,MayeDr00,2025-09-28,NWE,,CAR,"W, 42-13",14,17,203,2,0,155.6,2025,4
+Michael Penix,PeniMi00,2025-09-28,ATL,,WAS,"W, 34-27",20,26,313,2,1,126.0,2025,4
+C.J. Stroud,StroCJ00,2025-09-28,HOU,,TEN,"W, 26-0",22,28,233,2,0,125.1,2025,4
+Dak Prescott,PresDa01,2025-09-28,DAL,,GNB,"T, 40-40",31,40,319,3,0,124.9,2025,4
+Patrick Mahomes,MahoPa00,2025-09-28,KAN,,BAL,"W, 37-20",25,37,270,4,0,124.8,2025,4

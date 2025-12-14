@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Sam Darnold,2025-09-21,SEA,,NOR,"W, 44-13",14,18,218,2,0,154.2,2025,3
-Lamar Jackson,2025-09-22,BAL,,DET,"L, 30-38",21,27,288,3,0,148.1,2025,3
-Caleb Williams,2025-09-21,CHI,,DAL,"W, 31-14",19,28,298,4,0,142.6,2025,3
-Josh Allen,2025-09-18,BUF,,MIA,"W, 31-21",22,28,213,3,0,134.1,2025,3
-Geno Smith,2025-09-21,LVR,@,WAS,"L, 24-41",19,29,289,3,0,132.7,2025,3
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Sam Darnold,DarnSa00,2025-09-21,SEA,,NOR,"W, 44-13",14,18,218,2,0,154.2,2025,3
+Lamar Jackson,JackLa00,2025-09-22,BAL,,DET,"L, 30-38",21,27,288,3,0,148.1,2025,3
+Caleb Williams,WillCa03,2025-09-21,CHI,,DAL,"W, 31-14",19,28,298,4,0,142.6,2025,3
+Josh Allen,AlleJo02,2025-09-18,BUF,,MIA,"W, 31-21",22,28,213,3,0,134.1,2025,3
+Geno Smith,SmitGe00,2025-09-21,LVR,@,WAS,"L, 24-41",19,29,289,3,0,132.7,2025,3

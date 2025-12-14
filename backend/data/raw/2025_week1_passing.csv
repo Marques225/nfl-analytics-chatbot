@@ -1,6 +1,6 @@
-player,date,tm,unnamed:_3,opp,unnamed:_5,cmp,att,yds,td,int,rate,season,week
-Lamar Jackson,2025-09-07,BAL,@,BUF,"L, 40-41",14,19,209,2,0,144.4,2025,1
-Aaron Rodgers,2025-09-07,PIT,@,NYJ,"W, 34-32",22,30,244,4,0,136.7,2025,1
-Justin Herbert,2025-09-05,LAC,,KAN,"W, 27-21",25,34,318,3,0,131.7,2025,1
-Jordan Love,2025-09-07,GNB,,DET,"W, 27-13",16,22,188,2,0,128.6,2025,1
-Justin Fields,2025-09-07,NYJ,,PIT,"L, 32-34",16,22,218,1,0,119.1,2025,1
+player,pfr_player_id,game_date,team,at_or_vs,opp,game_outcome,pass_cmp,pass_att,pass_yds,pass_td,pass_int,pass_rating,season,week
+Lamar Jackson,JackLa00,2025-09-07,BAL,@,BUF,"L, 40-41",14,19,209,2,0,144.4,2025,1
+Aaron Rodgers,RodgAa00,2025-09-07,PIT,@,NYJ,"W, 34-32",22,30,244,4,0,136.7,2025,1
+Justin Herbert,HerbJu00,2025-09-05,LAC,,KAN,"W, 27-21",25,34,318,3,0,131.7,2025,1
+Jordan Love,LoveJo03,2025-09-07,GNB,,DET,"W, 27-13",16,22,188,2,0,128.6,2025,1
+Justin Fields,FielJu00,2025-09-07,NYJ,,PIT,"L, 32-34",16,22,218,1,0,119.1,2025,1
