@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Baker Mayfield,MayfBa00,2024-10-03,TAM,@,ATL,"L, 30-36",19,24,180,3,0,137.5,2024,5
-Joe Burrow,BurrJo01,2024-10-06,CIN,,BAL,"L, 38-41",30,39,392,5,1,137.0,2024,5
-Caleb Williams,WillCa03,2024-10-06,CHI,,CAR,"W, 36-10",20,29,304,2,0,126.2,2024,5
-Joe Flacco,FlacJo00,2024-10-06,IND,@,JAX,"L, 34-37",33,44,359,3,0,121.3,2024,5
-Lamar Jackson,JackLa00,2024-10-06,BAL,@,CIN,"W, 41-38",26,42,348,4,0,119.9,2024,5

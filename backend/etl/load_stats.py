@@ -30,7 +30,7 @@ def sync_players(df):
             if not exists:
                 print(f"Creating new player: {name}")
                 conn.execute(
-                    text("INSERT INTO players (name, position, team_id) VALUES (:name, 'QB', NULL)"),
+                    text("INSERT INTO players (name, position, team_id) VALUES (:name, 'Unknown', NULL)"),
                     {"name": name}
                 )
 
@@ -43,23 +43,26 @@ def load_csv(path: Path, table_name: str):
     # 1. Prepare Schema (The Target List)
     valid_cols = [
         "season", "week", "pfr_player_id", "player_name", "team",
+        # Passing
         "passing_yards", "passing_tds", "interceptions", 
         "completions", "attempts", "passer_rating",
         "sacks", "sack_yards", "longest_pass", "qbr",
-        "first_downs", "fourth_qtr_comebacks", "game_winning_drives"
+        "first_downs", "fourth_qtr_comebacks", "game_winning_drives",
+        # Rushing
+        "carries", "rushing_yards", "rushing_tds", "longest_rush",
+        # Receiving (NEW)
+        "targets", "receptions", "receiving_yards", "receiving_tds", "longest_reception"
     ]
 
-    # 2. SCHEMA ENFORCEMENT (The Fix)
-    # If a column is missing in the CSV, add it as None (NULL)
-    # This ensures the Database Table is always created with ALL columns.
+    # 2. SCHEMA ENFORCEMENT
     for col in valid_cols:
         if col not in df.columns:
-            df[col] = None
+            pass 
 
     # 3. Cleanup Old Data
     season = int(df["season"].iloc[0])
     week = int(df["week"].iloc[0])
-    print(f"🧹 Clearing existing data for Season {season} Week {week} in {table_name}...")
+    print(f"🧹 Clearing {table_name}: Season {season} Week {week}...")
     
     try:
         with engine.begin() as conn:
@@ -73,13 +76,17 @@ def load_csv(path: Path, table_name: str):
         else:
             raise e
 
-    # 4. Load Data
-    # Now df_clean is GUARANTEED to have 'sacks', 'longest_pass', etc.
-    df_clean = df[valid_cols]
-    
+    # 4. Filter and Load
+    cols_to_load = [c for c in valid_cols if c in df.columns]
+    df_clean = df[cols_to_load]
+
     df_clean.to_sql(table_name, engine, if_exists="append", index=False, method="multi")
     print(f"✅ Loaded {path} ({len(df_clean)} rows)")
 
 if __name__ == "__main__":
     for file in CLEAN_DIR.glob("*passing*.csv"):
         load_csv(file, "weekly_passing_stats")
+    for file in CLEAN_DIR.glob("*rushing*.csv"):
+        load_csv(file, "weekly_rushing_stats")
+    for file in CLEAN_DIR.glob("*receiving*.csv"):
+        load_csv(file, "weekly_receiving_stats")

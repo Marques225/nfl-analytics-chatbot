@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Lamar Jackson,JackLa00,2024-11-03,BAL,,DEN,"W, 41-10",16,19,280,3,0,158.3,2024,9
-Kirk Cousins,CousKi00,2024-11-03,ATL,,DAL,"W, 27-21",19,24,222,3,0,144.8,2024,9
-Jalen Hurts,HurtJa00,2024-11-03,PHI,,JAX,"W, 28-23",18,24,230,2,0,132.3,2024,9
-Jayden Daniels,DaniJa02,2024-11-03,WAS,@,NYG,"W, 27-22",15,22,209,2,0,128.8,2024,9
-Justin Herbert,HerbJu00,2024-11-03,LAC,@,CLE,"W, 27-10",18,27,282,2,0,125.8,2024,9

@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Lamar Jackson,JackLa00,2025-10-30,BAL,@,MIA,"W, 28-6",18,23,204,4,0,143.2,2025,9
-Sam Darnold,DarnSa00,2025-11-02,SEA,@,WAS,"W, 38-14",21,24,330,4,1,141.0,2025,9
-Matthew Stafford,StafMa00,2025-11-02,LAR,,NOR,"W, 34-10",24,32,281,4,0,140.8,2025,9
-Mac Jones,JoneMa05,2025-11-02,SFO,@,NYG,"W, 34-24",19,24,235,2,0,135.2,2025,9
-Josh Allen,AlleJo02,2025-11-02,BUF,,KAN,"W, 28-21",23,26,273,1,0,123.2,2025,9

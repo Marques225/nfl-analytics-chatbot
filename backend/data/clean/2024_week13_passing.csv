@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Josh Allen,AlleJo02,2024-12-01,BUF,,SFO,"W, 35-10",13,17,148,2,0,141.3,2024,13
-Jordan Love,LoveJo03,2024-11-28,GNB,,MIA,"W, 30-17",21,28,274,2,0,129.2,2024,13
-Russell Wilson,WilsRu00,2024-12-01,PIT,@,CIN,"W, 44-38",29,38,414,3,1,126.4,2024,13
-Aidan O'Connell,OConAi00,2024-11-29,LVR,@,KAN,"L, 17-19",23,35,340,2,0,116.4,2024,13
-Jayden Daniels,DaniJa02,2024-12-01,WAS,,TEN,"W, 42-19",25,30,206,3,1,114.7,2024,13

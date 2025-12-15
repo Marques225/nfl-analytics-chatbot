@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Jared Goff,GoffJa00,2025-11-09,DET,@,WAS,"W, 44-22",25,33,320,3,0,135.9,2025,10
-Marcus Mariota,MariMa01,2025-11-09,WAS,,DET,"L, 22-44",16,22,213,2,0,133.3,2025,10
-Tyler Shough,ShouTy00,2025-11-09,NOR,@,CAR,"W, 17-7",19,27,282,2,0,128.9,2025,10
-Matthew Stafford,StafMa00,2025-11-09,LAR,@,SFO,"W, 42-26",24,36,280,4,0,127.1,2025,10
-Mac Jones,JoneMa05,2025-11-09,SFO,,LAR,"L, 26-42",33,39,319,3,1,115.7,2025,10

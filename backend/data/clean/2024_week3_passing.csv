@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Josh Allen,AlleJo02,2024-09-23,BUF,,JAX,"W, 47-10",23,30,263,4,0,142.1,2024,3
-Jayden Daniels,DaniJa02,2024-09-23,WAS,@,CIN,"W, 38-33",21,23,254,2,0,141.7,2024,3
-Lamar Jackson,JackLa00,2024-09-22,BAL,@,DAL,"W, 28-25",12,15,182,1,0,139.4,2024,3
-Brock Purdy,PurdBr00,2024-09-22,SFO,@,LAR,"L, 24-27",22,30,292,3,0,137.1,2024,3
-Joe Burrow,BurrJo01,2024-09-23,CIN,,WAS,"L, 33-38",29,38,324,3,0,127.5,2024,3

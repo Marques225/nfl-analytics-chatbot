@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Josh Allen,AlleJo02,2025-12-07,BUF,,CIN,"W, 39-34",22,28,251,3,0,139.7,2025,14
-Matthew Stafford,StafMa00,2025-12-07,LAR,@,ARI,"W, 45-17",22,31,281,3,0,131.2,2025,14
-Kenny Pickett,PickKe00,2025-12-07,LVR,,DEN,"L, 17-24",8,11,97,1,0,129.7,2025,14
-J.J. McCarthy,McCaJJ00,2025-12-07,MIN,,WAS,"W, 31-0",16,23,163,3,0,129.2,2025,14
-Jordan Love,LoveJo03,2025-12-07,GNB,,CHI,"W, 28-21",17,25,234,3,1,120.7,2025,14

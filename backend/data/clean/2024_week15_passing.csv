@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Lamar Jackson,JackLa00,2024-12-15,BAL,@,NYG,"W, 35-14",21,25,290,5,0,154.6,2024,15
-Baker Mayfield,MayfBa00,2024-12-15,TAM,@,LAC,"W, 40-17",22,27,288,4,1,135.3,2024,15
-Jalen Hurts,HurtJa00,2024-12-15,PHI,,PIT,"W, 27-13",25,32,290,2,0,125.3,2024,15
-Jordan Love,LoveJo03,2024-12-15,GNB,@,SEA,"W, 30-13",20,27,229,2,0,123.8,2024,15
-Josh Allen,AlleJo02,2024-12-15,BUF,@,DET,"W, 48-42",23,34,362,2,0,122.4,2024,15

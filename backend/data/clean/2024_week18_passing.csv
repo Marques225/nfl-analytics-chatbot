@@ -1,6 +1,0 @@
-player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
-Bo Nix,NixxBo00,2025-01-05,DEN,,KAN,"W, 38-0",26,29,321,4,0,152.4,2024,18
-Marcus Mariota,MariMa01,2025-01-05,WAS,@,DAL,"W, 23-19",15,18,161,2,0,141.0,2024,18
-Geno Smith,SmitGe00,2025-01-05,SEA,@,LAR,"W, 30-25",20,27,223,4,0,137.8,2024,18
-Kyler Murray,MurrKy00,2025-01-05,ARI,,SFO,"W, 47-24",25,35,242,4,0,128.5,2024,18
-Justin Herbert,HerbJu00,2025-01-05,LAC,@,LVR,"W, 34-20",28,36,346,2,0,125.2,2024,18
