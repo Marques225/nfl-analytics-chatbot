@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Emeka Egbuka,EgbuEm01,2025-10-05,TAM,@,SEA,"W, 38-35",7,163,1,2025,5
+Stefon Diggs,DiggSt00,2025-10-05,NWE,@,BUF,"W, 23-20",10,146,0,2025,5
+Kendrick Bourne,BourKe00,2025-10-02,SFO,@,LAR,"W, 26-23",10,142,0,2025,5
+Jaxon Smith-Njigba,SmitJa06,2025-10-05,SEA,,TAM,"L, 35-38",8,132,1,2025,5
+Calvin Ridley,RidlCa00,2025-10-05,TEN,@,ARI,"W, 22-21",5,131,0,2025,5

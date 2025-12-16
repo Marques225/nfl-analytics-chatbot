@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jahmyr Gibbs,GibbJa01,2025-10-20,DET,,TAM,"W, 24-9",17,136,2,2025,7
+Christian McCaffrey,McCaCh01,2025-10-19,SFO,,ATL,"W, 20-10",24,129,2,2025,7
+Jaylen Warren,WarrJa01,2025-10-16,PIT,@,CIN,"L, 31-33",16,127,0,2025,7
+D'Andre Swift,SwifDA00,2025-10-19,CHI,,NOR,"W, 26-14",19,124,1,2025,7
+Javonte Williams,WillJa10,2025-10-19,DAL,,WAS,"W, 44-22",19,116,1,2025,7

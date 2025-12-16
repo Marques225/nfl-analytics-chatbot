@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Puka Nacua,NacuPu00,2025-12-07,LAR,@,ARI,"W, 45-17",7,167,2,2025,14
+D.K. Metcalf,MetcDK00,2025-12-07,PIT,@,BAL,"W, 27-22",7,148,0,2025,14
+Michael Wilson,WilsMi02,2025-12-07,ARI,,LAR,"L, 17-45",11,142,2,2025,14
+Zay Flowers,FlowZa00,2025-12-07,BAL,,PIT,"L, 22-27",8,124,0,2025,14
+Nico Collins,CollNi00,2025-12-07,HOU,@,KAN,"W, 20-10",4,121,0,2025,14

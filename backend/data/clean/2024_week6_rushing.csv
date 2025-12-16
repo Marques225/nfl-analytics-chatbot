@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Sean Tucker,TuckSe00,2024-10-13,TAM,@,NOR,"W, 51-27",14,136,1,2024,6
+Derrick Henry,HenrDe00,2024-10-13,BAL,,WAS,"W, 30-23",24,132,2,2024,6
+Breece Hall,HallBr03,2024-10-14,NYJ,,BUF,"L, 20-23",18,113,0,2024,6
+Najee Harris,HarrNa00,2024-10-13,PIT,@,LVR,"W, 32-13",14,106,1,2024,6
+Tyler Allgeier,AllgTy00,2024-10-13,ATL,@,CAR,"W, 38-20",18,105,1,2024,6

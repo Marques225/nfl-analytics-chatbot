@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Ashton Jeanty,JeanAs00,2025-09-28,LVR,,CHI,"L, 24-25",21,138,1,2025,4
+Omarion Hampton,HampOm00,2025-09-28,LAC,@,NYG,"L, 18-21",12,128,1,2025,4
+Travis Etienne,EtieTr00,2025-09-28,JAX,@,SFO,"W, 26-21",19,124,1,2025,4
+James Cook,CookJa01,2025-09-28,BUF,,NOR,"W, 31-19",22,117,1,2025,4
+J.K. Dobbins,DobbJK00,2025-09-29,DEN,,CIN,"W, 28-3",16,101,0,2025,4

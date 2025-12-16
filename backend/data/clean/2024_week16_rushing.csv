@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jonathan Taylor,TaylJo02,2024-12-22,IND,,TEN,"W, 38-30",29,218,3,2024,16
+Derrick Henry,HenrDe00,2024-12-21,BAL,,PIT,"W, 34-17",24,162,0,2024,16
+Chuba Hubbard,HubbCh01,2024-12-22,CAR,,ARI,"W, 36-30",25,152,2,2024,16
+Saquon Barkley,BarkSa00,2024-12-22,PHI,@,WAS,"L, 33-36",29,150,2,2024,16
+Kyren Williams,WillKy02,2024-12-22,LAR,@,NYJ,"W, 19-9",23,122,1,2024,16

@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+James Cook,CookJa01,2025-11-30,BUF,@,PIT,"W, 26-7",32,144,0,2025,13
+Bijan Robinson,RobiBi01,2025-11-30,ATL,@,NYJ,"L, 24-27",23,142,1,2025,13
+De'Von Achane,AchaDe00,2025-11-30,MIA,,NOR,"W, 21-17",22,134,1,2025,13
+Kyle Monangai,MonaKy00,2025-11-28,CHI,@,PHI,"W, 24-15",22,130,1,2025,13
+Kimani Vidal,VidaKi00,2025-11-30,LAC,,LVR,"W, 31-14",25,126,1,2025,13

@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Saquon Barkley,BarkSa00,2024-11-24,PHI,@,LAR,"W, 37-20",26,255,2,2024,12
+Derrick Henry,HenrDe00,2024-11-25,BAL,@,LAC,"W, 30-23",24,140,0,2024,12
+Tony Pollard,PollTo00,2024-11-24,TEN,@,HOU,"W, 32-27",24,119,1,2024,12
+Aaron Jones,JoneAa00,2024-11-24,MIN,@,CHI,"W, 30-27",22,106,1,2024,12
+Josh Jacobs,JacoJo01,2024-11-24,GNB,,SFO,"W, 38-10",26,106,3,2024,12

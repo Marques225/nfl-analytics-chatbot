@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Kyle Monangai,MonaKy00,2025-11-02,CHI,@,CIN,"W, 47-42",26,176,0,2025,9
+Rico Dowdle,DowdRi01,2025-11-02,CAR,@,GNB,"W, 16-13",25,130,2,2025,9
+Derrick Henry,HenrDe00,2025-10-30,BAL,@,MIA,"W, 28-6",19,119,0,2025,9
+James Cook,CookJa01,2025-11-02,BUF,,KAN,"W, 28-21",27,114,0,2025,9
+Kyren Williams,WillKy02,2025-11-02,LAR,,NOR,"W, 34-10",25,114,1,2025,9

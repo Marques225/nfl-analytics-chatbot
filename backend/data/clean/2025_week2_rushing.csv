@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jonathan Taylor,TaylJo02,2025-09-14,IND,,DEN,"W, 29-28",25,165,0,2025,2
+Bijan Robinson,RobiBi01,2025-09-14,ATL,@,MIN,"W, 22-6",22,143,0,2025,2
+James Cook,CookJa01,2025-09-14,BUF,@,NYJ,"W, 30-10",21,132,2,2025,2
+Kenneth Walker III,WalkKe00,2025-09-14,SEA,@,PIT,"W, 31-17",13,105,1,2025,2
+Alvin Kamara,KamaAl00,2025-09-14,NOR,,SFO,"L, 21-26",21,99,0,2025,2

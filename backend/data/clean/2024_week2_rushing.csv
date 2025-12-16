@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Josh Jacobs,JacoJo01,2024-09-15,GNB,,IND,"W, 16-10",32,151,0,2024,2
+Brian Robinson Jr.,RobiBr01,2024-09-15,WAS,,NYG,"W, 21-18",17,133,0,2024,2
+J.K. Dobbins,DobbJK00,2024-09-15,LAC,@,CAR,"W, 26-3",17,131,1,2024,2
+James Conner,ConnJa00,2024-09-15,ARI,,LAR,"W, 41-10",21,122,1,2024,2
+Alvin Kamara,KamaAl00,2024-09-15,NOR,@,DAL,"W, 44-19",20,115,3,2024,2

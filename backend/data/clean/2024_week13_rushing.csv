@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Bucky Irving,IrviBu00,2024-12-01,TAM,@,CAR,"W, 26-23",25,152,1,2024,13
+Alvin Kamara,KamaAl00,2024-12-01,NOR,,LAR,"L, 14-21",23,112,0,2024,13
+Rico Dowdle,DowdRi01,2024-11-28,DAL,,NYG,"W, 27-20",22,112,1,2024,13
+James Cook,CookJa01,2024-12-01,BUF,,SFO,"W, 35-10",14,107,1,2024,13
+Saquon Barkley,BarkSa00,2024-12-01,PHI,@,BAL,"W, 24-19",23,107,1,2024,13

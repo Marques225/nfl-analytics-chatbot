@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Jalen Hurts,HurtJa00,2025-10-26,PHI,,NYG,"W, 38-20",15,20,179,4,0,141.5,2025,8
+Tua Tagovailoa,TagoTu00,2025-10-26,MIA,@,ATL,"W, 34-10",20,26,205,4,0,138.6,2025,8
+Daniel Jones,JoneDa05,2025-10-26,IND,,TEN,"W, 38-14",21,29,272,3,0,136.0,2025,8
+Drake Maye,MayeDr00,2025-10-26,NWE,,CLE,"W, 32-13",18,24,282,3,1,135.8,2025,8
+Jordan Love,LoveJo03,2025-10-26,GNB,@,PIT,"W, 35-25",29,37,360,3,0,134.2,2025,8

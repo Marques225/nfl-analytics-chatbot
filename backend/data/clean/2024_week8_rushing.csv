@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Tyrone Tracy Jr.,TracTy00,2024-10-28,NYG,@,PIT,"L, 18-26",20,145,1,2024,8
+D'Andre Swift,SwifDA00,2024-10-27,CHI,@,WAS,"L, 15-18",18,129,1,2024,8
+Jahmyr Gibbs,GibbJa01,2024-10-27,DET,,TEN,"W, 52-14",11,127,1,2024,8
+Josh Jacobs,JacoJo01,2024-10-27,GNB,@,JAX,"W, 30-27",25,127,2,2024,8
+Najee Harris,HarrNa00,2024-10-28,PIT,,NYG,"W, 26-18",19,114,0,2024,8

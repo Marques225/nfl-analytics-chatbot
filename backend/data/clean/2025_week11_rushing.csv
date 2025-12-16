@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+De'Von Achane,AchaDe00,2025-11-16,MIA,,WAS,"W, 16-13",21,120,0,2025,11
+Sean Tucker,TuckSe00,2025-11-16,TAM,@,BUF,"L, 32-44",19,106,2,2025,11
+Bijan Robinson,RobiBi01,2025-11-16,ATL,,CAR,"L, 27-30",23,104,2,2025,11
+Derrick Henry,HenrDe00,2025-11-16,BAL,@,CLE,"W, 23-16",18,103,1,2025,11
+Chase Brown,BrowCh10,2025-11-16,CIN,@,PIT,"L, 12-34",18,99,0,2025,11

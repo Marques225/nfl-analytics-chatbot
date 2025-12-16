@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Amon-Ra St. Brown,StxxAm00,2024-11-17,DET,,JAX,"W, 52-6",11,161,2,2024,11
+Christian Watson,WatsCh00,2024-11-17,GNB,@,CHI,"W, 20-19",4,150,0,2024,11
+Tee Higgins,HiggTe00,2024-11-17,CIN,@,LAC,"L, 27-34",9,148,1,2024,11
+Jerry Jeudy,JeudJe00,2024-11-17,CLE,@,NOR,"L, 14-35",6,142,1,2024,11
+Brock Bowers,BoweBr01,2024-11-17,LVR,@,MIA,"L, 19-34",13,126,1,2024,11

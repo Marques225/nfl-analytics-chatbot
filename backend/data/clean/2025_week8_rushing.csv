@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+James Cook,CookJa01,2025-10-26,BUF,@,CAR,"W, 40-9",19,216,2,2025,8
+Jonathan Taylor,TaylJo02,2025-10-26,IND,,TEN,"W, 38-14",12,153,2,2025,8
+Saquon Barkley,BarkSa00,2025-10-26,PHI,,NYG,"W, 38-20",14,150,1,2025,8
+Breece Hall,HallBr03,2025-10-26,NYJ,@,CIN,"W, 39-38",18,133,2,2025,8
+Kimani Vidal,VidaKi00,2025-10-23,LAC,,MIN,"W, 37-10",23,117,1,2025,8

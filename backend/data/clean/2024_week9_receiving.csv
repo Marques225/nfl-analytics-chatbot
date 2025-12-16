@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Jaxon Smith-Njigba,SmitJa06,2024-11-03,SEA,,LAR,"L, 20-26",7,180,2,2024,9
+Justin Jefferson,JeffJu00,2024-11-03,MIN,,IND,"W, 21-13",7,137,0,2024,9
+Zay Flowers,FlowZa00,2024-11-03,BAL,,DEN,"W, 41-10",5,127,2,2024,9
+Tank Dell,DellNa00,2024-10-31,HOU,@,NYJ,"L, 13-21",6,126,0,2024,9
+Courtland Sutton,SuttCo00,2024-11-03,DEN,@,BAL,"L, 10-41",7,122,0,2024,9

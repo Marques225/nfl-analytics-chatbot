@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Saquon Barkley,BarkSa00,2024-11-03,PHI,,JAX,"W, 28-23",27,159,1,2024,9
+Alvin Kamara,KamaAl00,2024-11-03,NOR,@,CAR,"L, 22-23",29,155,0,2024,9
+Tony Pollard,PollTo00,2024-11-03,TEN,,NWE,"W, 20-17",28,128,0,2024,9
+Chase Brown,BrowCh10,2024-11-03,CIN,,LVR,"W, 41-24",27,120,0,2024,9
+James Conner,ConnJa00,2024-11-03,ARI,,CHI,"W, 29-9",18,107,0,2024,9

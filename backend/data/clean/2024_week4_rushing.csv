@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Derrick Henry,HenrDe00,2024-09-29,BAL,,BUF,"W, 35-10",24,199,1,2024,4
+Jordan Mason,MasoJo00,2024-09-29,SFO,,NWE,"W, 30-13",24,123,1,2024,4
+Chuba Hubbard,HubbCh01,2024-09-29,CAR,,CIN,"L, 24-34",18,104,1,2024,4
+James Conner,ConnJa00,2024-09-29,ARI,,WAS,"L, 14-42",18,104,1,2024,4
+Brian Robinson Jr.,RobiBr01,2024-09-29,WAS,@,ARI,"W, 42-14",21,101,1,2024,4

@@ -42,7 +42,7 @@ def load_csv(path: Path, table_name: str):
 
     # 1. Prepare Schema (The Target List)
     valid_cols = [
-        "season", "week", "pfr_player_id", "player_name", "team",
+        "season", "week", "pfr_player_id", "player_name", "team", "opponent",
         # Passing
         "passing_yards", "passing_tds", "interceptions", 
         "completions", "attempts", "passer_rating",

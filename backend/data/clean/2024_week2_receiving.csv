@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Nico Collins,CollNi00,2024-09-15,HOU,,CHI,"W, 19-13",8,135,1,2024,2
+Justin Jefferson,JeffJu00,2024-09-15,MIN,,SFO,"W, 23-17",4,133,1,2024,2
+Marvin Harrison Jr.,HarrMa09,2024-09-15,ARI,,LAR,"W, 41-10",4,130,2,2024,2
+D.K. Metcalf,MetcDK00,2024-09-15,SEA,@,NWE,"W, 23-20",10,129,1,2024,2
+Malik Nabers,NabeMa00,2024-09-15,NYG,@,WAS,"L, 18-21",10,127,1,2024,2

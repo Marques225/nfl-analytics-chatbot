@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Zay Flowers,FlowZa00,2024-10-13,BAL,,WAS,"W, 30-23",9,132,0,2024,6
+Chris Godwin,GodwCh00,2024-10-13,TAM,@,NOR,"W, 51-27",11,125,2,2024,6
+A.J. Brown,BrowAJ00,2024-10-13,PHI,,CLE,"W, 20-16",6,116,1,2024,6
+Allen Lazard,LazaAl00,2024-10-14,NYJ,,BUF,"L, 20-23",6,114,1,2024,6
+Garrett Wilson,WilsGa00,2024-10-14,NYJ,,BUF,"L, 20-23",8,107,1,2024,6

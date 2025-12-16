@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+CeeDee Lamb,LambCe00,2024-10-27,DAL,@,SFO,"L, 24-30",13,146,2,2024,8
+Calvin Ridley,RidlCa00,2024-10-27,TEN,@,DET,"L, 14-52",10,143,0,2024,8
+George Kittle,KittGe00,2024-10-27,SFO,,DAL,"W, 30-24",6,128,1,2024,8
+Terry McLaurin,McLaTe00,2024-10-27,WAS,,CHI,"W, 18-15",5,125,0,2024,8
+Trey McBride,McBrTr01,2024-10-27,ARI,@,MIA,"W, 28-27",9,124,0,2024,8

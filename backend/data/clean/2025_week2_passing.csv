@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Jared Goff,GoffJa00,2025-09-14,DET,,CHI,"W, 52-21",23,28,334,5,0,156.0,2025,2
+Drake Maye,MayeDr00,2025-09-14,NWE,@,MIA,"W, 33-27",19,23,230,2,0,137.3,2025,2
+Lamar Jackson,JackLa00,2025-09-14,BAL,,CLE,"W, 41-17",19,29,225,4,0,128.6,2025,2
+Russell Wilson,WilsRu00,2025-09-14,NYG,@,DAL,"L, 37-40",30,41,450,3,1,123.0,2025,2
+Justin Herbert,HerbJu00,2025-09-15,LAC,@,LVR,"W, 20-9",19,27,242,2,0,122.8,2025,2

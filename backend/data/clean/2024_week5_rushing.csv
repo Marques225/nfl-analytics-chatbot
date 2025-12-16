@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Tyrone Tracy Jr.,TracTy00,2024-10-06,NYG,@,SEA,"W, 29-20",18,129,0,2024,5
+Kareem Hunt,HuntKa00,2024-10-07,KAN,,NOR,"W, 26-13",27,102,1,2024,5
+Kyren Williams,WillKy02,2024-10-06,LAR,,GNB,"L, 19-24",22,102,1,2024,5
+Tank Bigsby,BigsTa00,2024-10-06,JAX,,IND,"W, 37-34",13,101,2,2024,5
+Chuba Hubbard,HubbCh01,2024-10-06,CAR,@,CHI,"L, 10-36",13,97,1,2024,5

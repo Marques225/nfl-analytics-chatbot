@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Davante Adams,AdamDa01,2024-12-15,NYJ,@,JAX,"W, 32-25",9,198,2,2024,15
+Amon-Ra St. Brown,StxxAm00,2024-12-15,DET,,BUF,"L, 42-48",14,193,1,2024,15
+Mike Evans,EvanMi00,2024-12-15,TAM,@,LAC,"W, 40-17",9,159,2,2024,15
+CeeDee Lamb,LambCe00,2024-12-15,DAL,@,CAR,"W, 30-14",9,116,1,2024,15
+Ty Johnson,JohnTy02,2024-12-15,BUF,@,DET,"W, 48-42",5,114,0,2024,15
