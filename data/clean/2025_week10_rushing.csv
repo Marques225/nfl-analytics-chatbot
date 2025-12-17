@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jonathan Taylor,TaylJo02,2025-11-09,IND,,ATL,"W, 31-25",32,244,3,2025,10
+De'Von Achane,AchaDe00,2025-11-09,MIA,,BUF,"W, 30-13",22,174,2,2025,10
+TreVeyon Henderson,HendTr02,2025-11-09,NWE,@,TAM,"W, 28-23",14,147,2,2025,10
+Jahmyr Gibbs,GibbJa01,2025-11-09,DET,@,WAS,"W, 44-22",15,142,2,2025,10
+Kimani Vidal,VidaKi00,2025-11-09,LAC,,PIT,"W, 25-10",25,95,1,2025,10

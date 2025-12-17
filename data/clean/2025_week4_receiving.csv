@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Puka Nacua,NacuPu00,2025-09-28,LAR,,IND,"W, 27-20",13,170,1,2025,4
+George Pickens,PickGe00,2025-09-28,DAL,,GNB,"T, 40-40",8,134,2,2025,4
+Justin Jefferson,JeffJu00,2025-09-28,MIN,@,PIT,"L, 21-24",10,126,0,2025,4
+D.K. Metcalf,MetcDK00,2025-09-28,PIT,,MIN,"W, 24-21",5,126,1,2025,4
+Jordan Addison,AddiJo00,2025-09-28,MIN,@,PIT,"L, 21-24",4,114,0,2025,4

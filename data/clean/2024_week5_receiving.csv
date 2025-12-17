@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Ja'Marr Chase,ChasJa00,2024-10-06,CIN,,BAL,"L, 38-41",10,193,2,2024,5
+Drake London,LondDr00,2024-10-03,ATL,,TAM,"W, 36-30",12,154,1,2024,5
+Brandon Aiyuk,AiyuBr00,2024-10-06,SFO,,ARI,"L, 23-24",8,147,0,2024,5
+Alec Pierce,PierAl00,2024-10-06,IND,@,JAX,"L, 34-37",3,134,1,2024,5
+JuJu Smith-Schuster,SmitJu00,2024-10-07,KAN,,NOR,"W, 26-13",7,130,0,2024,5

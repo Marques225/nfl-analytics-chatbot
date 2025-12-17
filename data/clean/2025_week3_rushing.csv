@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+David Montgomery,MontDa01,2025-09-22,DET,@,BAL,"W, 38-30",12,151,2,2025,3
+Jordan Mason,MasoJo00,2025-09-21,MIN,,CIN,"W, 48-10",16,116,2,2025,3
+James Cook,CookJa01,2025-09-18,BUF,,MIA,"W, 31-21",19,108,1,2025,3
+Jonathan Taylor,TaylJo02,2025-09-21,IND,@,TEN,"W, 41-20",17,102,3,2025,3
+Quinshon Judkins,JudkQu00,2025-09-21,CLE,,GNB,"W, 13-10",18,94,1,2025,3

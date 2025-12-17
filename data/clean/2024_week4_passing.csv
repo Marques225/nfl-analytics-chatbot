@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Jared Goff,GoffJa00,2024-09-30,DET,,SEA,"W, 42-29",18,18,292,2,0,155.8,2024,4
+Lamar Jackson,JackLa00,2024-09-29,BAL,,BUF,"W, 35-10",13,18,156,2,0,135.4,2024,4
+Dak Prescott,PresDa01,2024-09-26,DAL,@,NYG,"W, 20-15",22,27,221,2,0,125.5,2024,4
+Sam Darnold,DarnSa00,2024-09-29,MIN,@,GNB,"W, 31-29",20,28,275,3,1,123.4,2024,4
+C.J. Stroud,StroCJ00,2024-09-29,HOU,,JAX,"W, 24-20",27,40,345,2,0,110.9,2024,4

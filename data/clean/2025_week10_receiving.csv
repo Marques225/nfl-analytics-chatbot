@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Nico Collins,CollNi00,2025-11-09,HOU,,JAX,"W, 36-29",7,136,0,2025,10
+Trey McBride,McBrTr01,2025-11-09,ARI,@,SEA,"L, 22-44",9,127,1,2025,10
+Jalen Nailor,NailJa00,2025-11-09,MIN,,BAL,"L, 19-27",5,124,1,2025,10
+Jameson Williams,WillJa11,2025-11-09,DET,@,WAS,"W, 44-22",6,119,1,2025,10
+Emeka Egbuka,EgbuEm01,2025-11-09,TAM,,NWE,"L, 23-28",6,115,1,2025,10

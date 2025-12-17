@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Malik Nabers,NabeMa00,2024-12-29,NYG,,IND,"W, 45-33",7,171,2,2024,17
+Ricky Pearsall,PearRi00,2024-12-30,SFO,,DET,"L, 34-40",8,141,1,2024,17
+Tee Higgins,HiggTe00,2024-12-28,CIN,,DEN,"W, 30-24",11,131,3,2024,17
+Puka Nacua,NacuPu00,2024-12-28,LAR,,ARI,"W, 13-9",10,129,0,2024,17
+Trey McBride,McBrTr01,2024-12-28,ARI,@,LAR,"L, 9-13",12,123,1,2024,17

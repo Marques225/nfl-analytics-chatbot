@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Saquon Barkley,BarkSa00,2024-12-29,PHI,,DAL,"W, 41-7",31,167,0,2024,17
+Derrick Henry,HenrDe00,2024-12-25,BAL,@,HOU,"W, 31-2",27,147,1,2024,17
+Jayden Daniels,DaniJa02,2024-12-29,WAS,,ATL,"W, 30-24",16,127,0,2024,17
+Jonathan Taylor,TaylJo02,2024-12-29,IND,@,NYG,"L, 33-45",32,125,2,2024,17
+Jahmyr Gibbs,GibbJa01,2024-12-30,DET,@,SFO,"W, 40-34",18,117,1,2024,17

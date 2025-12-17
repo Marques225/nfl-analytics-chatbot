@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Ja'Marr Chase,ChasJa00,2024-12-09,CIN,@,DAL,"W, 27-20",14,177,2,2024,14
+Puka Nacua,NacuPu00,2024-12-08,LAR,,BUF,"W, 44-42",12,162,1,2024,14
+George Kittle,KittGe00,2024-12-08,SFO,,CHI,"W, 38-13",6,151,0,2024,14
+Darnell Mooney,MoonDa00,2024-12-08,ATL,@,MIN,"L, 21-42",6,142,0,2024,14
+Jordan Addison,AddiJo00,2024-12-08,MIN,,ATL,"W, 42-21",8,133,3,2024,14

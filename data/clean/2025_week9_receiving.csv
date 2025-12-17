@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Jaxon Smith-Njigba,SmitJa06,2025-11-02,SEA,@,WAS,"W, 38-14",8,129,0,2025,9
+Brock Bowers,BoweBr01,2025-11-02,LVR,,JAX,"L, 29-30",12,127,3,2025,9
+Tee Higgins,HiggTe00,2025-11-02,CIN,,CHI,"L, 42-47",7,121,2,2025,9
+Drake London,LondDr00,2025-11-02,ATL,@,NWE,"L, 23-24",9,118,3,2025,9
+Colston Loveland,LoveCo00,2025-11-02,CHI,@,CIN,"W, 47-42",6,118,2,2025,9

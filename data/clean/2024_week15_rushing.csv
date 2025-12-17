@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Rico Dowdle,DowdRi01,2024-12-15,DAL,@,CAR,"W, 30-14",25,149,0,2024,15
+Bijan Robinson,RobiBi01,2024-12-16,ATL,@,LVR,"W, 15-9",22,125,0,2024,15
+Bucky Irving,IrviBu00,2024-12-15,TAM,@,LAC,"W, 40-17",15,117,0,2024,15
+James Conner,ConnJa00,2024-12-15,ARI,,NWE,"W, 30-17",16,110,2,2024,15
+Kyren Williams,WillKy02,2024-12-12,LAR,@,SFO,"W, 12-6",29,108,0,2024,15

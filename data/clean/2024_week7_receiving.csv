@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Keon Coleman,ColeKe02,2024-10-20,BUF,,TEN,"W, 34-10",4,125,0,2024,7
+Rashod Bateman,BateRa00,2024-10-21,BAL,@,TAM,"W, 41-31",4,121,1,2024,7
+Amon-Ra St. Brown,StxxAm00,2024-10-20,DET,@,MIN,"W, 31-29",8,112,1,2024,7
+George Pickens,PickGe00,2024-10-20,PIT,,NYJ,"W, 37-15",5,111,1,2024,7
+Breece Hall,HallBr03,2024-10-20,NYJ,@,PIT,"L, 15-37",6,103,0,2024,7

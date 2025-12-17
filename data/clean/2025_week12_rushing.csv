@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jahmyr Gibbs,GibbJa01,2025-11-23,DET,,NYG,"W, 34-27",15,219,2,2025,12
+James Cook,CookJa01,2025-11-20,BUF,@,HOU,"L, 19-23",17,116,1,2025,12
+Chase Brown,BrowCh10,2025-11-23,CIN,,NWE,"L, 20-26",19,107,0,2025,12
+Emanuel Wilson,WilsEm00,2025-11-23,GNB,,MIN,"W, 23-6",28,107,2,2025,12
+Kareem Hunt,HuntKa00,2025-11-23,KAN,,IND,"W, 23-20",30,104,1,2025,12

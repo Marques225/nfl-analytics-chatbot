@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Drake London,LondDr00,2025-01-05,ATL,,CAR,"L, 38-44",10,187,2,2024,18
+Quentin Johnston,JohnQu02,2025-01-05,LAC,@,LVR,"W, 34-20",13,186,0,2024,18
+Jakobi Meyers,MeyeJa01,2025-01-05,LVR,,LAC,"L, 20-34",9,123,1,2024,18
+Kayshon Boutte,BoutKa00,2025-01-05,NWE,,BUF,"W, 23-16",7,117,1,2024,18
+Brian Thomas,ThomBr06,2025-01-05,JAX,@,IND,"L, 23-26",7,103,0,2024,18

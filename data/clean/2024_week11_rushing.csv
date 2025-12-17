@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Saquon Barkley,BarkSa00,2024-11-14,PHI,,WAS,"W, 26-18",26,146,2,2024,11
+Taysom Hill,HillTa00,2024-11-17,NOR,,CLE,"W, 35-14",7,138,3,2024,11
+Joe Mixon,MixoJo00,2024-11-18,HOU,@,DAL,"W, 34-10",20,109,3,2024,11
+Chase Brown,BrowCh10,2024-11-17,CIN,@,LAC,"L, 27-34",22,86,0,2024,11
+Kyren Williams,WillKy02,2024-11-17,LAR,@,NWE,"W, 28-22",15,86,0,2024,11

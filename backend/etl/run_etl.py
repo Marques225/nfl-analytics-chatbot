@@ -85,4 +85,4 @@ def main(full_refresh=False):
 
 if __name__ == "__main__":
     # Run full refresh to get all data
-    main(full_refresh=True)
+    main(full_refresh=False)

@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Jerry Jeudy,JeudJe00,2024-12-02,CLE,@,DEN,"L, 32-41",9,235,1,2024,13
+Brock Bowers,BoweBr01,2024-11-29,LVR,@,KAN,"L, 17-19",10,140,1,2024,13
+Nico Collins,CollNi00,2024-12-01,HOU,@,JAX,"W, 23-20",8,119,0,2024,13
+Mike Evans,EvanMi00,2024-12-01,TAM,@,CAR,"W, 26-23",8,118,1,2024,13
+Ladd McConkey,McCoLa00,2024-12-01,LAC,@,ATL,"W, 17-13",9,117,0,2024,13

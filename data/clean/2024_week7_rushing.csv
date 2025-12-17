@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Saquon Barkley,BarkSa00,2024-10-20,PHI,@,NYG,"W, 28-3",17,176,1,2024,7
+Derrick Henry,HenrDe00,2024-10-21,BAL,@,TAM,"W, 41-31",15,169,0,2024,7
+Tank Bigsby,BigsTa00,2024-10-20,JAX,,NWE,"W, 32-16",26,118,2,2024,7
+Jahmyr Gibbs,GibbJa01,2024-10-20,DET,@,MIN,"W, 31-29",15,116,2,2024,7
+Joe Mixon,MixoJo00,2024-10-20,HOU,@,GNB,"L, 22-24",25,115,2,2024,7

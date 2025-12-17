@@ -43,3 +43,11 @@ jobs:
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)/backend
           python -m backend.etl.aggregate
+    
+      # 6. Run Validation
+      - name: Validate Data Quality
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/backend
+          python -m backend.etl.validate

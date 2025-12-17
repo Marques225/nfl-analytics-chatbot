@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Jauan Jennings,JennJa00,2024-09-22,SFO,@,LAR,"L, 24-27",11,175,3,2024,3
+Dallas Goedert,GoedDa00,2024-09-22,PHI,@,NOR,"W, 15-12",10,170,0,2024,3
+Diontae Johnson,JohnDi01,2024-09-22,CAR,@,LVR,"W, 36-22",8,122,1,2024,3
+Ja'Marr Chase,ChasJa00,2024-09-23,CIN,,WAS,"L, 33-38",6,118,2,2024,3
+Rome Odunze,OdunRo00,2024-09-22,CHI,@,IND,"L, 16-21",6,112,1,2024,3

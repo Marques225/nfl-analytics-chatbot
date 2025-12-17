@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Tre Tucker,TuckTr00,2025-09-21,LVR,@,WAS,"L, 24-41",8,145,3,2025,3
+Courtland Sutton,SuttCo00,2025-09-21,DEN,@,LAC,"L, 20-23",6,118,1,2025,3
+Ricky Pearsall,PearRi00,2025-09-21,SFO,,ARI,"W, 16-15",8,117,0,2025,3
+Puka Nacua,NacuPu00,2025-09-21,LAR,@,PHI,"L, 26-33",11,112,0,2025,3
+A.J. Brown,BrowAJ00,2025-09-21,PHI,,LAR,"W, 33-26",6,109,1,2025,3

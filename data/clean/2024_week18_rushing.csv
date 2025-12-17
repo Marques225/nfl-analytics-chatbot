@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jonathan Taylor,TaylJo02,2025-01-05,IND,,JAX,"W, 26-23",34,177,1,2024,18
+Dameon Pierce,PierDa01,2025-01-05,HOU,@,TEN,"W, 23-14",19,176,1,2024,18
+Bijan Robinson,RobiBi01,2025-01-05,ATL,,CAR,"L, 38-44",28,170,2,2024,18
+Jahmyr Gibbs,GibbJa01,2025-01-05,DET,,MIN,"W, 31-9",23,139,3,2024,18
+Derrick Henry,HenrDe00,2025-01-04,BAL,,CLE,"W, 35-10",20,138,2,2024,18

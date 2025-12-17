@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Tua Tagovailoa,TagoTu00,2024-11-24,MIA,,NWE,"W, 34-15",29,40,317,4,0,128.9,2024,12
+Lamar Jackson,JackLa00,2024-11-25,BAL,@,LAC,"W, 30-23",16,22,177,2,0,126.5,2024,12
+Will Levis,LeviWi00,2024-11-24,TEN,@,HOU,"W, 32-27",18,24,278,2,1,123.3,2024,12
+Patrick Mahomes,MahoPa00,2024-11-24,KAN,@,CAR,"W, 30-27",27,37,269,3,0,120.2,2024,12
+Cooper Rush,RushCo00,2024-11-24,DAL,@,WAS,"W, 34-26",24,32,247,2,0,117.6,2024,12

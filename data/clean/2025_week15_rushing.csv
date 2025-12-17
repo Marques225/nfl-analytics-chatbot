@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+TreVeyon Henderson,HendTr02,2025-12-14,NWE,,BUF,"L, 31-35",14,148,2,2025,15
+James Cook,CookJa01,2025-12-14,BUF,@,NWE,"W, 35-31",22,107,2,2025,15
+Tony Pollard,PollTo00,2025-12-14,TEN,@,SFO,"L, 24-37",14,104,1,2025,15
+Jawhar Jordan,JordJa00,2025-12-14,HOU,,ARI,"W, 40-20",15,101,0,2025,15
+Derrick Henry,HenrDe00,2025-12-14,BAL,@,CIN,"W, 24-0",11,100,0,2025,15

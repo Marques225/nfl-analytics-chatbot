@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+DeVonta Smith,SmitDe07,2025-10-19,PHI,@,MIN,"W, 28-22",9,183,1,2025,7
+Oronde Gadsden II,GadsOr01,2025-10-19,LAC,,IND,"L, 24-38",7,164,1,2025,7
+Ja'Marr Chase,ChasJa00,2025-10-16,CIN,,PIT,"W, 33-31",16,161,1,2025,7
+Jordan Addison,AddiJo00,2025-10-19,MIN,,PHI,"L, 22-28",9,128,0,2025,7
+Jaxon Smith-Njigba,SmitJa06,2025-10-20,SEA,,HOU,"W, 27-19",8,123,1,2025,7

@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Chuba Hubbard,HubbCh01,2024-11-10,CAR,,NYG,"W, 20-17",28,153,1,2024,10
+Bijan Robinson,RobiBi01,2024-11-10,ATL,@,NOR,"L, 17-20",20,116,2,2024,10
+Jonathan Taylor,TaylJo02,2024-11-10,IND,,BUF,"L, 20-30",21,114,0,2024,10
+Tyrone Tracy Jr.,TracTy00,2024-11-10,NYG,@,CAR,"L, 17-20",18,103,1,2024,10
+Aaron Jones,JoneAa00,2024-11-10,MIN,@,JAX,"W, 12-7",17,88,0,2024,10

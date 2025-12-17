@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Jalen Hurts,HurtJa00,2025-12-14,PHI,,LVR,"W, 31-0",12,15,175,3,0,154.9,2025,15
+Brock Purdy,PurdBr00,2025-12-14,SFO,,TEN,"W, 37-24",23,30,295,3,0,140.3,2025,15
+C.J. Stroud,StroCJ00,2025-12-14,HOU,,ARI,"W, 40-20",22,29,260,3,0,137.1,2025,15
+Trevor Lawrence,LawrTr00,2025-12-14,JAX,,NYJ,"W, 48-20",20,32,330,5,0,136.7,2025,15
+Bo Nix,NixxBo00,2025-12-14,DEN,,GNB,"W, 34-26",23,34,302,4,0,134.7,2025,15

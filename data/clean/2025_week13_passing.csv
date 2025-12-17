@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Bryce Young,YounBr01,2025-11-30,CAR,,LAR,"W, 31-28",15,20,206,3,0,147.1,2025,13
+Jared Goff,GoffJa00,2025-11-27,DET,,GNB,"L, 24-31",20,26,256,2,0,132.9,2025,13
+Patrick Mahomes,MahoPa00,2025-11-27,KAN,@,DAL,"L, 28-31",23,34,261,4,0,129.7,2025,13
+Drake Maye,MayeDr00,2025-12-01,NWE,,NYG,"W, 33-15",24,31,282,2,0,126.0,2025,13
+Jordan Love,LoveJo03,2025-11-27,GNB,@,DET,"W, 31-24",18,30,234,4,0,124.2,2025,13

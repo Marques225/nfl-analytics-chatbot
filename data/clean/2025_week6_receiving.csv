@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+George Pickens,PickGe00,2025-10-12,DAL,@,CAR,"L, 27-30",9,168,1,2025,6
+Jaxon Smith-Njigba,SmitJa06,2025-10-12,SEA,@,JAX,"W, 20-12",8,162,1,2025,6
+Drake London,LondDr00,2025-10-13,ATL,,BUF,"W, 24-14",10,158,1,2025,6
+Kendrick Bourne,BourKe00,2025-10-12,SFO,@,TAM,"L, 19-30",5,142,0,2025,6
+Dallas Goedert,GoedDa00,2025-10-09,PHI,@,NYG,"L, 17-34",9,110,1,2025,6

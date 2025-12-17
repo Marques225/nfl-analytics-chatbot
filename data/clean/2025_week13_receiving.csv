@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Jameson Williams,WillJa11,2025-11-27,DET,,GNB,"L, 24-31",7,144,1,2025,13
+A.J. Brown,BrowAJ00,2025-11-28,PHI,,CHI,"L, 15-24",10,132,2,2025,13
+CeeDee Lamb,LambCe00,2025-11-27,DAL,,KAN,"W, 31-28",7,112,1,2025,13
+Ja'Marr Chase,ChasJa00,2025-11-27,CIN,@,BAL,"W, 32-14",7,110,0,2025,13
+Zach Ertz,ErtzZa00,2025-11-30,WAS,,DEN,"L, 26-27",10,106,0,2025,13

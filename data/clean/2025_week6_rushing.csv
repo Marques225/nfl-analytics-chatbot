@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Rico Dowdle,DowdRi01,2025-10-12,CAR,,DAL,"W, 30-27",30,183,0,2025,6
+Bijan Robinson,RobiBi01,2025-10-13,ATL,,BUF,"W, 24-14",19,170,1,2025,6
+De'Von Achane,AchaDe00,2025-10-12,MIA,,LAC,"L, 27-29",16,128,2,2025,6
+Kimani Vidal,VidaKi00,2025-10-12,LAC,@,MIA,"W, 29-27",18,124,0,2025,6
+Jonathan Taylor,TaylJo02,2025-10-12,IND,,ARI,"W, 31-27",21,123,1,2025,6

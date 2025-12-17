@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Derrick Henry,HenrDe00,2025-09-07,BAL,@,BUF,"L, 40-41",18,169,2,2025,1
+Travis Etienne,EtieTr00,2025-09-07,JAX,,CAR,"W, 26-10",16,143,0,2025,1
+Breece Hall,HallBr03,2025-09-07,NYJ,,PIT,"L, 32-34",19,107,0,2025,1
+Jacory Croskey-Merritt,CrosJa00,2025-09-07,WAS,,NYG,"W, 21-6",10,82,1,2025,1
+Jonathan Taylor,TaylJo02,2025-09-07,IND,,MIA,"W, 33-8",18,71,0,2025,1
