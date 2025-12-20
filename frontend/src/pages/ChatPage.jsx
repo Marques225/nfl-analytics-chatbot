@@ -1,9 +1,12 @@
+import apiClient from '../api/client';
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { 
     Container, TextField, Button, Paper, Typography, Box, List, ListItem, ListItemText 
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import PlayerSearch from '../components/PlayerSearch';
+import ComparisonCard from '../components/ComparisonCard';
 
 const ChatPage = () => {
     // 1. STATE: This memory holds the chat history and current input
@@ -12,23 +15,46 @@ const ChatPage = () => {
         { sender: "bot", text: "Hello! I am your NFL Analytics Assistant. Ask me about players, teams, or stats! 🏈" }
     ]);
 
-    // 2. FUNCTION: What happens when you click "Send"
-    const handleSend = () => {
-        if (!input.trim()) return; // Don't send empty messages
+    // ... (inside ChatPage component)
+    const navigate = useNavigate(); // Hook for navigation
 
-        // Add User Message
-        const newMessages = [...messages, { sender: "user", text: input }];
-        setMessages(newMessages);
+    const handleSend = async () => {
+        if (!input.trim()) return;
 
-        // Clear Input box
-        setInput("");
+        // 1. Add User Message immediately
+        const userMsg = { sender: "user", text: input };
+        setMessages(prev => [...prev, userMsg]);
+        const currentInput = input; // Save for API call
+        setInput(""); // Clear box
 
-        // Simulate Bot Response (We will connect to Real Backend later)
-        setTimeout(() => {
-            setMessages(prev => [...prev, { sender: "bot", text: "I'm still learning, but I heard you! 🤖" }]);
-        }, 1000);
+        try {
+            // 2. Call the Backend Brain 🧠
+            const response = await apiClient.post('/chat/', { message: currentInput });
+            const botData = response.data;
+
+            // 3. Handle different response types
+            let botMsg = { sender: "bot", text: botData.text, type: botData.type, data: botData.data };
+            
+            // If it's a player card, we can add a "View Profile" button or link
+            if (botData.type === "player_card") {
+                botMsg.action = {
+                    label: "View Full Profile",
+                    link: `/player/${botData.data.player_id}`
+                };
+            }
+            
+            // If it's a comparison, we display raw text for now (we'll upgrade this in a moment)
+            if (botData.type === "comparison_card") {
+                 // You can add special formatting here later
+            }
+
+            setMessages(prev => [...prev, botMsg]);
+
+        } catch (error) {
+            console.error("Chat Error:", error);
+            setMessages(prev => [...prev, { sender: "bot", text: "My brain is offline. Check the terminal! 🔌" }]);
+        }
     };
-
     return (
         <Container maxWidth="md" style={{ marginTop: '20px' }}>
             <PlayerSearch />
@@ -49,9 +75,38 @@ const ChatPage = () => {
                                     backgroundColor: msg.sender === "user" ? "#1976d2" : "#f1f1f1", 
                                     color: msg.sender === "user" ? "#fff" : "#000",
                                     borderRadius: '15px',
-                                    maxWidth: '70%'
+                                    maxWidth: '80%'
                                 }}>
+                                    {/* 1. Text Message */}
                                     <ListItemText primary={msg.text} />
+                                    
+                                    {/* 2. Action Button (Profile) */}
+                                    {msg.action && (
+                                        <Button 
+                                            variant="contained" 
+                                            size="small" 
+                                            style={{ marginTop: '10px', backgroundColor: '#fff', color: '#1976d2' }}
+                                            onClick={() => navigate(msg.action.link)}
+                                        >
+                                            {msg.action.label}
+                                        </Button>
+                                    )}
+
+                                    {/* 3. Comparison Card (NEW) */}
+                                    {msg.type === "comparison_card" && (
+                                        <ComparisonCard data={msg.data} />
+                                    )}
+
+                                    {/* 4. Draft List (NEW) */}
+                                    {msg.type === "draft_card" && (
+                                        <div style={{ marginTop: '10px', background: 'white', padding: '10px', borderRadius: '5px', color: 'black' }}>
+                                            {msg.data.map((p, i) => (
+                                                <div key={i} style={{ borderBottom: '1px solid #eee', padding: '4px 0' }}>
+                                                    <b>#{i+1} {p.name}</b> ({p.team_id}) - {p.value} yds
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
                                 </Paper>
                             </ListItem>
                         ))}

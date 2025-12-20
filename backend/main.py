@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware # <--- NEW IMPORT
-from api.routes import players, teams, leaders, compare, draft, analytics
+from fastapi.middleware.cors import CORSMiddleware
+from api.routes import players, teams, leaders, compare, draft, analytics, chat  # <--- IMPORT CHAT
 
 app = FastAPI(title="NFL Analytics Chatbot API")
 
@@ -26,6 +26,7 @@ app.include_router(leaders.router, prefix="/leaders", tags=["Leaders"])
 app.include_router(compare.router, prefix="/compare", tags=["Analytics"])
 app.include_router(draft.router, prefix="/draft-suggestions", tags=["Draft"])
 app.include_router(analytics.router, prefix="/analytics", tags=["Deep Dive"])
+app.include_router(chat.router, prefix="/chat", tags=["Chat Interface"])  # <--- NEW REGISTRATION
 
 @app.get("/")
 def health_check():
