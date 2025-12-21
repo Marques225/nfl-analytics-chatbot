@@ -1,133 +1,104 @@
-import apiClient from '../api/client';
-import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { 
-    Container, TextField, Button, Paper, Typography, Box, List, ListItem, ListItemText 
+  Container, TextField, Button, Paper, Typography, Box, 
+  Table, TableBody, TableCell, TableHead, TableRow, Chip 
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import PlayerSearch from '../components/PlayerSearch';
-import ComparisonCard from '../components/ComparisonCard';
+import PersonIcon from '@mui/icons-material/Person'; // <--- Icon for the button
+import { useNavigate } from 'react-router-dom';
+import apiClient from '../api/client';
 
 const ChatPage = () => {
-    // 1. STATE: This memory holds the chat history and current input
-    const [input, setInput] = useState("");
+    const navigate = useNavigate();
     const [messages, setMessages] = useState([
-        { sender: "bot", text: "Hello! I am your NFL Analytics Assistant. Ask me about players, teams, or stats! 🏈" }
+        { sender: 'bot', text: "Hello! I am your NFL Analytics Assistant. Ask 'Who should I draft?' to see the 2025 Fantasy Leaders! 🏈" }
     ]);
-
-    // ... (inside ChatPage component)
-    const navigate = useNavigate(); // Hook for navigation
+    const [input, setInput] = useState("");
 
     const handleSend = async () => {
         if (!input.trim()) return;
 
-        // 1. Add User Message immediately
-        const userMsg = { sender: "user", text: input };
+        const userMsg = { sender: 'user', text: input };
         setMessages(prev => [...prev, userMsg]);
-        const currentInput = input; // Save for API call
-        setInput(""); // Clear box
+        setInput("");
 
         try {
-            // 2. Call the Backend Brain 🧠
-            const response = await apiClient.post('/chat/', { message: currentInput });
-            const botData = response.data;
-
-            // 3. Handle different response types
-            let botMsg = { sender: "bot", text: botData.text, type: botData.type, data: botData.data };
-            
-            // If it's a player card, we can add a "View Profile" button or link
-            if (botData.type === "player_card") {
-                botMsg.action = {
-                    label: "View Full Profile",
-                    link: `/player/${botData.data.player_id}`
-                };
-            }
-            
-            // If it's a comparison, we display raw text for now (we'll upgrade this in a moment)
-            if (botData.type === "comparison_card") {
-                 // You can add special formatting here later
-            }
-
+            const response = await apiClient.post('/chat/', { message: input });
+            const botMsg = { 
+                sender: 'bot', 
+                text: response.data.text || response.data.response,
+                data: response.data.data 
+            };
             setMessages(prev => [...prev, botMsg]);
-
         } catch (error) {
-            console.error("Chat Error:", error);
-            setMessages(prev => [...prev, { sender: "bot", text: "My brain is offline. Check the terminal! 🔌" }]);
+            setMessages(prev => [...prev, { sender: 'bot', text: "Sorry, I couldn't reach the brain. 🧠" }]);
         }
     };
+
+    const handlePlayerClick = (playerId) => {
+        if (playerId) navigate(`/players/${playerId}`);
+    };
+
+    // --- SUB-COMPONENTS ---
+    const LeaderTable = ({ title, players, icon }) => (
+        <Paper elevation={2} sx={{ mt: 1, mb: 2, overflow: 'hidden' }}>
+            <Box sx={{ bgcolor: '#e3f2fd', p: 1, fontWeight: 'bold', color: '#1565c0' }}>{icon} {title}</Box>
+            <Table size="small">
+                <TableHead><TableRow><TableCell>Name</TableCell><TableCell align="right">FPts</TableCell></TableRow></TableHead>
+                <TableBody>
+                    {players.map((p, i) => (
+                        <TableRow key={i} hover style={{ cursor: 'pointer' }} onClick={() => handlePlayerClick(p.player_id)}>
+                            <TableCell component="th" scope="row" sx={{ fontSize: '0.9rem', color: '#1976d2', textDecoration: 'underline' }}>
+                                {p.name} <span style={{color:'#666', fontSize:'0.75rem'}}>({p.team})</span>
+                            </TableCell>
+                            <TableCell align="right" sx={{ fontWeight: 'bold' }}>{p.fantasy}</TableCell>
+                        </TableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </Paper>
+    );
+
     return (
-        <Container maxWidth="md" style={{ marginTop: '20px' }}>
-            <PlayerSearch />
-            <Paper elevation={3} style={{ padding: '20px', height: '80vh', display: 'flex', flexDirection: 'column' }}>
-                
-                {/* Header */}
-                <Typography variant="h5" gutterBottom>
-                    Chat Room
-                </Typography>
+        <Container maxWidth="md" sx={{ mt: 4, height: '80vh', display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h4" gutterBottom>Chat Room</Typography>
+            <Paper elevation={3} sx={{ flex: 1, p: 2, overflowY: 'auto', mb: 2, bgcolor: '#fafafa' }}>
+                {messages.map((msg, index) => (
+                    <Box key={index} sx={{ display: 'flex', justifyContent: msg.sender === 'user' ? 'flex-end' : 'flex-start', mb: 2 }}>
+                        <Box sx={{ maxWidth: '85%', p: 2, borderRadius: 2, bgcolor: msg.sender === 'user' ? '#1976d2' : '#ffffff', color: msg.sender === 'user' ? '#fff' : '#000', boxShadow: 1 }}>
+                            <Typography variant="body1">{msg.text}</Typography>
+                            
+                            {/* RENDER DRAFT BOARD TABLES */}
+                            {msg.data && msg.data.type === 'draft_board' && (
+                                <Box sx={{ mt: 2, minWidth: '300px' }}>
+                                    <LeaderTable title="Top QBs" icon="🎯" players={msg.data.qbs} />
+                                    <LeaderTable title="Top RBs" icon="🏃" players={msg.data.rbs} />
+                                    <LeaderTable title="Top WRs" icon="👐" players={msg.data.wrs} />
+                                </Box>
+                            )}
 
-                {/* Message Display Area (The Scrollable Box) */}
-                <Box style={{ flexGrow: 1, overflowY: 'auto', marginBottom: '20px', border: '1px solid #eee', padding: '10px' }}>
-                    <List>
-                        {messages.map((msg, index) => (
-                            <ListItem key={index} style={{ justifyContent: msg.sender === "user" ? "flex-end" : "flex-start" }}>
-                                <Paper style={{ 
-                                    padding: '10px 15px', 
-                                    backgroundColor: msg.sender === "user" ? "#1976d2" : "#f1f1f1", 
-                                    color: msg.sender === "user" ? "#fff" : "#000",
-                                    borderRadius: '15px',
-                                    maxWidth: '80%'
-                                }}>
-                                    {/* 1. Text Message */}
-                                    <ListItemText primary={msg.text} />
-                                    
-                                    {/* 2. Action Button (Profile) */}
-                                    {msg.action && (
-                                        <Button 
-                                            variant="contained" 
-                                            size="small" 
-                                            style={{ marginTop: '10px', backgroundColor: '#fff', color: '#1976d2' }}
-                                            onClick={() => navigate(msg.action.link)}
-                                        >
-                                            {msg.action.label}
-                                        </Button>
-                                    )}
-
-                                    {/* 3. Comparison Card (NEW) */}
-                                    {msg.type === "comparison_card" && (
-                                        <ComparisonCard data={msg.data} />
-                                    )}
-
-                                    {/* 4. Draft List (NEW) */}
-                                    {msg.type === "draft_card" && (
-                                        <div style={{ marginTop: '10px', background: 'white', padding: '10px', borderRadius: '5px', color: 'black' }}>
-                                            {msg.data.map((p, i) => (
-                                                <div key={i} style={{ borderBottom: '1px solid #eee', padding: '4px 0' }}>
-                                                    <b>#{i+1} {p.name}</b> ({p.team_id}) - {p.value} yds
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-                                </Paper>
-                            </ListItem>
-                        ))}
-                    </List>
-                </Box>
-
-                {/* Input Area */}
-                <Box style={{ display: 'flex', gap: '10px' }}>
-                    <TextField 
-                        fullWidth 
-                        variant="outlined" 
-                        placeholder="Ask about Lamar Jackson..." 
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                    />
-                    <Button variant="contained" color="primary" endIcon={<SendIcon />} onClick={handleSend}>
-                        Send
-                    </Button>
-                </Box>
+                            {/* RENDER PLAYER PROFILE BUTTON (The Fix) */}
+                            {msg.data && msg.data.type === 'player_profile' && (
+                                <Box sx={{ mt: 2 }}>
+                                    <Button 
+                                        variant="contained" 
+                                        color="secondary" 
+                                        size="small"
+                                        startIcon={<PersonIcon />}
+                                        onClick={() => handlePlayerClick(msg.data.player_id)}
+                                    >
+                                        View {msg.data.name}'s Full Profile
+                                    </Button>
+                                </Box>
+                            )}
+                        </Box>
+                    </Box>
+                ))}
             </Paper>
+            <Box sx={{ display: 'flex', gap: 1 }}>
+                <TextField fullWidth variant="outlined" placeholder="Ask 'Who is Lamar?' or 'Who should I draft?'..." value={input} onChange={(e) => setInput(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && handleSend()} />
+                <Button variant="contained" endIcon={<SendIcon />} onClick={handleSend}>Send</Button>
+            </Box>
         </Container>
     );
 };

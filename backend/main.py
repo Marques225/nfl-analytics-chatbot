@@ -1,33 +1,26 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import players, teams, leaders, compare, draft, analytics, chat  # <--- IMPORT CHAT
+from api.routes import players, teams, leaders, chat
 
-app = FastAPI(title="NFL Analytics Chatbot API")
+app = FastAPI()
 
-# --- NEW: ALLOW FRONTEND CONNECTION ---
-origins = [
-    "http://localhost:5173",  # React App
-    "http://localhost:3000",  # Backup port
-]
-
+# 1. BULLETPROOF SECURITY (CORS)
+# We accept requests from ANY origin to stop the 400 Bad Request errors.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],  # Allows all origins (localhost:3000, etc.)
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allows all methods (GET, POST, OPTIONS, PUT, DELETE)
+    allow_headers=["*"],  # Allows all headers
 )
-# --------------------------------------
 
-# Register Routes
+# 2. CONNECT ROUTES
 app.include_router(players.router, prefix="/players", tags=["Players"])
 app.include_router(teams.router, prefix="/teams", tags=["Teams"])
 app.include_router(leaders.router, prefix="/leaders", tags=["Leaders"])
-app.include_router(compare.router, prefix="/compare", tags=["Analytics"])
-app.include_router(draft.router, prefix="/draft-suggestions", tags=["Draft"])
-app.include_router(analytics.router, prefix="/analytics", tags=["Deep Dive"])
-app.include_router(chat.router, prefix="/chat", tags=["Chat Interface"])  # <--- NEW REGISTRATION
+app.include_router(chat.router, prefix="/chat", tags=["Chat"])
 
+# 3. HEALTH CHECK
 @app.get("/")
-def health_check():
-    return {"status": "ok", "message": "API is running 🚀"}
+def read_root():
+    return {"status": "NFL Analytics Brain is Online 🧠"}

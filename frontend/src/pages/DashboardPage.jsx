@@ -11,9 +11,24 @@ const DashboardPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // We ask for "Top 5 Teams by Total Offense" (from Day 9)
-                const response = await apiClient.get('/teams/leaders/offense?season=2024&metric=off_total_yards&limit=5');
-                setLeaders(response.data);
+                // UPDATE: Changed season to 2025 to match the live data we just generated
+                const response = await apiClient.get('/teams/leaders/offense?season=2025&metric=off_total_yards&limit=5');
+                
+                // --- SAFETY CHECK (The Fix) ---
+                // We verify the data is actually an array before setting it.
+                // This prevents the "map is not a function" crash.
+                const data = response.data;
+                
+                if (Array.isArray(data)) {
+                    setLeaders(data);
+                } else if (data.results && Array.isArray(data.results)) {
+                    // Handle case where backend wraps it in { results: [] }
+                    setLeaders(data.results);
+                } else {
+                    console.error("Unexpected Data Format:", data);
+                    setLeaders([]); 
+                }
+                
                 setLoading(false);
             } catch (err) {
                 console.error("API Error:", err);
@@ -35,7 +50,11 @@ const DashboardPage = () => {
             {error && <Alert severity="error">{error}</Alert>}
 
             {/* Loading Spinner */}
-            {loading && <CircularProgress />}
+            {loading && (
+                <Grid container justifyContent="center" style={{ marginTop: '50px' }}>
+                    <CircularProgress />
+                </Grid>
+            )}
 
             {/* Data Table */}
             {!loading && !error && (
@@ -43,7 +62,7 @@ const DashboardPage = () => {
                     <Grid item xs={12} md={8}>
                         <Paper elevation={3} style={{ padding: '20px' }}>
                             <Typography variant="h6" gutterBottom>
-                                Top 5 Offenses (2024)
+                                🏆 Top 5 Offenses (2025)
                             </Typography>
                             <Table>
                                 <TableHead>
@@ -54,13 +73,24 @@ const DashboardPage = () => {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {leaders.map((row) => (
-                                        <TableRow key={row.rank}>
-                                            <TableCell>{row.rank}</TableCell>
-                                            <TableCell>{row.team}</TableCell>
-                                            <TableCell align="right">{row.value}</TableCell>
+                                    {leaders.length > 0 ? (
+                                        leaders.map((row, index) => (
+                                            <TableRow key={row.team || index}>
+                                                <TableCell>{index + 1}</TableCell>
+                                                <TableCell>{row.team}</TableCell>
+                                                {/* Added toLocaleString() for comma formatting (e.g., 4,500) */}
+                                                <TableCell align="right">
+                                                    {row.value?.toLocaleString()}
+                                                </TableCell>
+                                            </TableRow>
+                                        ))
+                                    ) : (
+                                        <TableRow>
+                                            <TableCell colSpan={3} align="center">
+                                                No stats available for 2025 yet.
+                                            </TableCell>
                                         </TableRow>
-                                    ))}
+                                    )}
                                 </TableBody>
                             </Table>
                         </Paper>

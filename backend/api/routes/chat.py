@@ -1,110 +1,156 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from database import get_db
-import re
+import logging
+import math
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
 class ChatRequest(BaseModel):
     message: str
 
+def safe_float(value, decimals=2):
+    try:
+        if value is None: return 0.0
+        f_val = float(value)
+        if math.isnan(f_val) or math.isinf(f_val): return 0.0
+        return round(f_val, decimals)
+    except:
+        return 0.0
+
+def calculate_fantasy(stats):
+    if not stats: return 0.0
+    db_pts = safe_float(stats.get('fantasy_points', 0))
+    if db_pts > 0: return db_pts
+    
+    pass_pts = (safe_float(stats.get('passing_yards')) / 25) + (safe_float(stats.get('passing_tds')) * 4) - (safe_float(stats.get('interceptions')) * 2)
+    rush_pts = (safe_float(stats.get('rushing_yards')) / 10) + (safe_float(stats.get('rushing_tds')) * 6)
+    rec_pts = (safe_float(stats.get('receiving_yards')) / 10) + (safe_float(stats.get('receiving_tds')) * 6) + (safe_float(stats.get('receptions')) * 1)
+    return round(pass_pts + rush_pts + rec_pts, 2)
+
+def get_player_stats(db, name):
+    sql_p = text("SELECT * FROM players WHERE name ILIKE :name LIMIT 1")
+    p = db.execute(sql_p, {"name": f"%{name}%"}).mappings().first()
+    if not p: return None, None
+    pid = p.get('gsis_id') or p.get('player_id')
+    sql_s = text("SELECT * FROM season_stats WHERE gsis_id = :pid AND season = 2025")
+    s = db.execute(sql_s, {"pid": pid}).mappings().first()
+    return dict(p), (dict(s) if s else {})
+
+def get_fantasy_leaders(db, position_filter, limit=3):
+    sql = text(f"""
+        SELECT p.name, p.team_id, p.gsis_id, s.*
+        FROM season_stats s
+        JOIN players p ON s.gsis_id = p.gsis_id
+        WHERE s.season = 2025 AND p.position IN :pos
+        ORDER BY (s.passing_yards + s.rushing_yards + s.receiving_yards) DESC
+        LIMIT 30
+    """)
+    raw_players = db.execute(sql, {"pos": tuple(position_filter)}).mappings().all()
+    processed = []
+    for p in raw_players:
+        p_dict = dict(p)
+        f_pts = calculate_fantasy(p_dict)
+        processed.append({
+            "name": p_dict['name'],
+            "team": p_dict['team_id'],
+            "player_id": p_dict['gsis_id'],
+            "val": p_dict.get('passing_yards', 0) + p_dict.get('rushing_yards', 0) + p_dict.get('receiving_yards', 0),
+            "fantasy": f_pts
+        })
+    processed.sort(key=lambda x: x['fantasy'], reverse=True)
+    return processed[:limit]
+
 @router.post("/")
-def chat_handler(request: ChatRequest, db: Session = Depends(get_db)):
-    user_msg = request.message.lower().strip()
+def chat_endpoint(request: ChatRequest, db: Session = Depends(get_db)):
+    msg = request.message.lower().strip()
+    logger.info(f"💬 Received: {msg}")
     
-    # --- RULE 1: PLAYER SEARCH ("Who is Lamar?", "Show me Josh Allen") ---
-    # We look for keywords or assume it's a name search if short
-    # Simple regex to extract potential names could go here, but let's try a direct search first.
-    
-    # Logic: If the message is a name, try to find them.
-    # We'll use a loose search.
-    if len(user_msg) > 3 and "compare" not in user_msg:
-        # Clean up common phrases
-        clean_name = user_msg.replace("who is", "").replace("show me", "").replace("stats for", "").strip()
-        
-        # SQL: Try to find a player with this name
-        sql = text("SELECT * FROM players WHERE name ILIKE :search LIMIT 1")
-        player = db.execute(sql, {"search": f"%{clean_name}%"}).fetchone()
-        
-        if player:
-            p_data = dict(player._mapping)
-            return {
-                "type": "player_card",
-                "text": f"Here is the profile for {p_data['name']}.",
-                "data": p_data
-            }
+    answer = ""
+    structured_data = None
 
-    # --- RULE 2: COMPARISONS ("Compare Lamar", "Difference 2024 2025") ---
-    if "compare" in user_msg:
-        # Extract name (naive approach: take everything after 'compare')
-        target_name = user_msg.split("compare")[-1].strip()
-        
-        # 1. Find ID
-        sql_find = text("SELECT player_id, name, position FROM players WHERE name ILIKE :search LIMIT 1")
-        player = db.execute(sql_find, {"search": f"%{target_name}%"}).fetchone()
-        
-        if player:
-            pid = player.player_id
-            pos = player.position
+    try:
+        # LOGIC 1: DRAFT ADVICE (Tables)
+        if "who should i draft" in msg and " or " not in msg:
+            qbs = get_fantasy_leaders(db, ["QB"], 3)
+            rbs = get_fantasy_leaders(db, ["RB"], 3)
+            wrs = get_fantasy_leaders(db, ["WR", "TE"], 3)
             
-            # 2. Call our existing Compare Logic (Manual reuse here for speed)
-            # Fetch 2024 & 2025
-            table_map = {"QB": "season_passing_stats", "RB": "season_rushing_stats", "WR": "season_receiving_stats", "TE": "season_receiving_stats"}
-            table = table_map.get(pos, "season_passing_stats") # Default to passing
-            
-            sql_stats = text(f"SELECT * FROM {table} WHERE player_id = :pid AND season IN (2024, 2025) ORDER BY season")
-            stats = db.execute(sql_stats, {"pid": pid}).mappings().all()
-            
-            data_map = {row["season"]: dict(row) for row in stats}
-            
-            return {
-                "type": "comparison_card",
-                "text": f"Comparing 2024 vs 2025 for {player.name} ({pos})",
-                "data": {
-                    "player": dict(player._mapping),
-                    "2024": data_map.get(2024),
-                    "2025": data_map.get(2025)
+            structured_data = {
+                "type": "draft_board",
+                "qbs": qbs,
+                "rbs": rbs,
+                "wrs": wrs
+            }
+            answer = "Here are the top Fantasy Leaders for 2025:"
+
+        # LOGIC 2: COMPARE
+        elif "draft" in msg or "compare" in msg or " or " in msg:
+            if " or " in msg: parts = msg.split(" or ")
+            elif " vs " in msg: parts = msg.split(" vs ")
+            else: parts = []
+
+            if len(parts) >= 2:
+                # --- THE FIX IS HERE ---
+                # We added replacements for "should i draft" and "should i"
+                n1 = parts[0].replace("who should i draft", "") \
+                             .replace("should i draft", "") \
+                             .replace("should i", "") \
+                             .replace("compare", "") \
+                             .replace("draft", "") \
+                             .strip()
+                n2 = parts[1].replace("?", "").strip()
+                
+                p1, s1 = get_player_stats(db, n1)
+                p2, s2 = get_player_stats(db, n2)
+                
+                if p1 and p2:
+                    fp1 = calculate_fantasy(s1)
+                    fp2 = calculate_fantasy(s2)
+                    winner = p1['name'] if fp1 >= fp2 else p2['name']
+                    diff = round(abs(fp1 - fp2), 1)
+                    answer = (f"**2025 Comparison:**\n"
+                              f"🏈 **{p1['name']}**: {fp1} FPts\n"
+                              f"🏈 **{p2['name']}**: {fp2} FPts\n\n"
+                              f"👉 Pick **{winner}** (+{diff}).")
+                else:
+                    answer = "I couldn't find stats for one of those players."
+            else:
+                answer = "Try: 'Draft Lamar Jackson or Patrick Mahomes'."
+
+        # LOGIC 3: WHO IS
+        elif "who is" in msg or "tell me about" in msg:
+            name = msg.replace("who is", "").replace("tell me about", "").replace("?", "").strip()
+            p, s = get_player_stats(db, name)
+            if p:
+                if s:
+                    pts = calculate_fantasy(s)
+                    answer = f"{p['name']} ({p['team_id']}): {s.get('passing_yards',0)+s.get('rushing_yards',0)+s.get('receiving_yards',0)} Yds | {pts} FPts."
+                else:
+                    answer = f"{p['name']} is on the {p['team_id']} roster."
+                
+                structured_data = {
+                    "type": "player_profile",
+                    "player_id": p['gsis_id'],
+                    "name": p['name'],
+                    "team": p['team_id']
                 }
-            }
-        
-    # --- RULE 3: DRAFT SUGGESTIONS ("Who should I draft?", "Draft QB") ---
-    if "draft" in user_msg or "pick" in user_msg:
-        # Default to WR if no position specified
-        pos = "WR" 
-        if "qb" in user_msg: pos = "QB"
-        if "rb" in user_msg: pos = "RB"
-        if "te" in user_msg: pos = "TE"
+            else:
+                answer = f"I couldn't find '{name}'."
+        else:
+            answer = "Ask 'Who should I draft?' for leaders, or 'Draft X or Y' to compare."
 
-        # Reuse the logic from your 'draft.py' route (simplified here)
-        # We find players with high WAR (Wins Above Replacement) logic - approximated by total yards for now
-        table_map = {"QB": "season_passing_stats", "RB": "season_rushing_stats", "WR": "season_receiving_stats", "TE": "season_receiving_stats"}
-        table = table_map.get(pos)
-        
-        # Sort by value DESC (e.g. passing_yards)
-        sort_col = "passing_yards" if pos == "QB" else "rushing_yards" if pos == "RB" else "receiving_yards"
-        
-        sql = text(f"""
-            SELECT p.name, p.team_id, s.{sort_col} as value 
-            FROM {table} s
-            JOIN players p ON p.player_id = s.player_id
-            WHERE s.season = 2024
-            ORDER BY s.{sort_col} DESC
-            LIMIT 5
-        """)
-        
-        results = db.execute(sql).mappings().all()
-        
-        return {
-            "type": "draft_card",
-            "text": f"Here are the top {pos} picks based on 2024 performance:",
-            "data": [dict(row) for row in results]
-        }
-    
-    # --- FALLBACK ---
+    except Exception as e:
+        logger.error(f"Chat Error: {e}")
+        answer = "I encountered an error."
+
     return {
-        "type": "text",
-        "text": "I'm not sure I understand. Try asking 'Who is [Player Name]' or 'Compare [Player Name]'.",
-        "data": None
+        "response": answer,
+        "text": answer,
+        "data": structured_data
     }

@@ -1,29 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Container } from '@mui/material'; // cleaned up unused imports
 import ChatPage from './pages/ChatPage';
 import DashboardPage from './pages/DashboardPage';
-import PlayerPage from './pages/PlayerPage'; // <--- NEW IMPORT
+import PlayerPage from './pages/PlayerPage';
+import Navbar from './components/Navbar'; // <--- We use this now!
+
 function App() {
   return (
     <Router>
-      {/* 1. The Navigation Bar */}
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
-            NFL Bot 🤖
-          </Typography>
-          <Button color="inherit" component={Link} to="/">Chat</Button>
-          <Button color="inherit" component={Link} to="/dashboard">Dashboard</Button>
-        </Toolbar>
-      </AppBar>
+      {/* 1. The Navigation Bar (Includes Search Bar) */}
+      <Navbar />
 
       {/* 2. The Page Content */}
-      <Container>
+      <Container style={{ marginTop: '20px' }}>
         <Routes>
+          {/* Home is Chat */}
           <Route path="/" element={<ChatPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/player/:player_id" element={<PlayerPage />} /> 
+          
+          {/* CRITICAL FIX: Matches the links from SearchBar and Chat */}
+          <Route path="/players/:playerId" element={<PlayerPage />} /> 
         </Routes>
       </Container>
     </Router>

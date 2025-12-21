@@ -1,111 +1,46 @@
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import text
-from typing import List
 from database import get_db
-from schemas import LeaderEntry
 
 router = APIRouter()
 
-# --- 1. Season Leaders (Unchanged) ---
-@router.get("/{season}/{category}", response_model=List[LeaderEntry])
-def get_season_leaders(
-    season: int,
-    category: str,
-    metric: str = Query(..., description="Metric to sort by"),
-    skip: int = 0,
-    limit: int = 10,
-    db: Session = Depends(get_db)
-):
-    valid_tables = {
-        "passing": "season_passing_stats",
-        "rushing": "season_rushing_stats",
-        "receiving": "season_receiving_stats"
+@router.get("/")
+def get_leaders(category: str = "passing", season: int = 2025, db: Session = Depends(get_db)):
+    # 1. Map frontend category to DB column
+    col_map = {
+        "passing": "passing_yards",
+        "rushing": "rushing_yards",
+        "receiving": "receiving_yards",
+        "fantasy": "fantasy_points"
     }
     
-    if category not in valid_tables:
-        return []
-
-    table_name = valid_tables[category]
+    sort_col = col_map.get(category, "passing_yards")
     
+    # 2. Query (Safe Join)
+    # We join players and stats. We use COALESCE to turn NULLs into 0 for sorting.
     sql = text(f"""
-        SELECT 
-            p.player_id,
-            p.name,
-            p.team_id as team,
-            s.{metric} as value
-        FROM {table_name} s
-        JOIN players p ON p.player_id = s.player_id
+        SELECT p.name, p.team_id, COALESCE(s.{sort_col}, 0) as value, p.headshot_url
+        FROM season_stats s
+        JOIN players p ON s.gsis_id = p.gsis_id
         WHERE s.season = :season
-        ORDER BY s.{metric} DESC
-        LIMIT :limit OFFSET :skip
+        ORDER BY value DESC
+        LIMIT 5
     """)
     
     try:
-        results = db.execute(sql, {"season": season, "limit": limit, "skip": skip}).fetchall()
+        results = db.execute(sql, {"season": season}).mappings().all()
+        
+        return [
+            {
+                "rank": i+1,
+                "name": row["name"],
+                "team": row["team_id"],
+                "value": row["value"],
+                "image": row["headshot_url"]
+            }
+            for i, row in enumerate(results)
+        ]
     except Exception as e:
-        print(f"Query Error: {e}")
+        print(f"Error fetching leaders: {e}")
         return []
-
-    return [
-        {
-            "rank": skip + i + 1,
-            "player_id": str(row.player_id),
-            "name": row.name,
-            "team": str(row.team),
-            "value": row.value
-        }
-        for i, row in enumerate(results)
-    ]
-
-# --- 2. Weekly Leaders (FIXED JOIN) ---
-@router.get("/{season}/{week}/{category}", response_model=List[LeaderEntry])
-def get_weekly_leaders(
-    season: int,
-    week: int,
-    category: str,
-    metric: str = Query(..., description="Metric to sort by"),
-    limit: int = 10,
-    db: Session = Depends(get_db)
-):
-    valid_tables = {
-        "passing": "weekly_passing_stats",
-        "rushing": "weekly_rushing_stats",
-        "receiving": "weekly_receiving_stats"
-    }
-    
-    if category not in valid_tables:
-        return []
-
-    table_name = valid_tables[category]
-    
-    # FIXED: Joining on NAME
-    sql = text(f"""
-        SELECT 
-            p.player_id,
-            p.name,
-            p.team_id as team,
-            w.{metric} as value
-        FROM {table_name} w
-        JOIN players p ON p.name = w.player_name
-        WHERE w.season = :season AND w.week = :week
-        ORDER BY w.{metric} DESC
-        LIMIT :limit
-    """)
-    
-    try:
-        results = db.execute(sql, {"season": season, "week": week, "limit": limit}).fetchall()
-    except Exception as e:
-        print(f"Query Error: {e}")
-        return []
-
-    return [
-        {
-            "rank": i + 1,
-            "player_id": str(row.player_id),
-            "name": row.name,
-            "team": str(row.team),
-            "value": row.value
-        }
-        for i, row in enumerate(results)
-    ]
