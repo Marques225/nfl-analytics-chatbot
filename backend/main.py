@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import players, teams, leaders, chat
+from api.routes import players, teams, leaders, chat, predict 
 
 app = FastAPI()
 
@@ -19,6 +19,7 @@ app.include_router(players.router, prefix="/players", tags=["Players"])
 app.include_router(teams.router, prefix="/teams", tags=["Teams"])
 app.include_router(leaders.router, prefix="/leaders", tags=["Leaders"])
 app.include_router(chat.router, prefix="/chat", tags=["Chat"])
+app.include_router(predict.router, prefix="/predict", tags=["ML Predictions"]) # <--- Add this
 
 # 3. HEALTH CHECK
 @app.get("/")

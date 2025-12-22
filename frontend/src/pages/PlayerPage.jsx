@@ -1,113 +1,101 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Container, Paper, Typography, Grid, Chip, CircularProgress, Alert, Box } from '@mui/material';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import apiClient from '../api/client';
+import { Card, CardContent, Typography, CircularProgress, Grid, Avatar, Chip } from '@mui/material';
+import PlayerAnalytics from '../components/PlayerAnalytics';
 
 const PlayerPage = () => {
-    const { playerId } = useParams(); // Grabs the ID from the URL
-    const [playerData, setPlayerData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  const { playerId } = useParams();
+  const [playerData, setPlayerData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchPlayer = async () => {
-            try {
-                // Fetch from our updated Backend
-                const response = await apiClient.get(`/players/${playerId}`);
-                setPlayerData(response.data);
-                setLoading(false);
-            } catch (err) {
-                console.error("Profile Fetch Error:", err);
-                setError("Could not load player data.");
-                setLoading(false);
-            }
-        };
+  useEffect(() => {
+    fetch(`http://127.0.0.1:8000/players/${playerId}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setPlayerData(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching player:", err);
+        setLoading(false);
+      });
+  }, [playerId]);
 
-        if (playerId) fetchPlayer();
-    }, [playerId]);
+  if (loading) return <CircularProgress style={{ display: 'block', margin: '20px auto' }} />;
+  if (!playerData) return <Typography variant="h5" align="center">Player not found</Typography>;
 
-    if (loading) return (
-        <Box display="flex" justifyContent="center" mt={5}>
-            <CircularProgress />
-        </Box>
-    );
+  const { player_info, season_stats, comparison } = playerData;
+  const analyticsData = { ...player_info, comparison };
 
-    if (error) return (
-        <Container maxWidth="md" sx={{ mt: 4 }}>
-            <Alert severity="error">{error}</Alert>
-        </Container>
-    );
+  return (
+    <div style={{ paddingBottom: '40px' }}>
+      {/* 1. HEADER SECTION */}
+      <Card style={{ marginBottom: '20px', backgroundColor: '#1e293b', color: 'white' }}>
+        <CardContent style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <Avatar 
+            src={player_info.headshot_url} 
+            alt={player_info.name}
+            sx={{ width: 100, height: 100, border: '3px solid #6366f1' }}
+          />
+          <div>
+            <Typography variant="h3" style={{ fontWeight: 'bold' }}>{player_info.name}</Typography>
+            <Typography variant="h6" style={{ color: '#94a3b8' }}>
+              {player_info.position} • {player_info.team_id}
+            </Typography>
+          </div>
+        </CardContent>
+      </Card>
 
-    if (!playerData) return null;
+      {/* 2. ANALYTICS & PREDICTION */}
+      <PlayerAnalytics player={analyticsData} />
 
-    const { player_info, season_stats } = playerData;
-    
-    // Sort stats so 2025 is last (for the graph)
-    const graphData = [...(season_stats || [])].sort((a, b) => a.season - b.season);
+      {/* 3. SEASON STATS HISTORY */}
+      <Typography variant="h5" style={{ margin: '30px 0 15px', fontWeight: 'bold' }}>
+        Season History
+      </Typography>
+      
+      <Grid container spacing={2}>
+        {season_stats.map((season) => {
+          // SAFETY CALCULATIONS
+          const p_tds = Number(season.passing_tds || 0);
+          const r_tds = Number(season.rushing_tds || 0);
+          const rec_tds = Number(season.receiving_tds || 0);
+          const total_tds = p_tds + r_tds + rec_tds;
 
-    return (
-        <Container maxWidth="lg" sx={{ mt: 4 }}>
-            {/* HEADER SECTION */}
-            <Paper elevation={3} sx={{ p: 3, mb: 4, bgcolor: '#f5f5f5' }}>
-                <Grid container spacing={2} alignItems="center">
-                    <Grid item>
-                        <img 
-                            src={player_info.headshot_url || "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nfl-placeholder.png"} 
-                            alt={player_info.name} 
-                            style={{ width: 100, height: 100, borderRadius: '50%', border: '3px solid #1976d2' }} 
-                        />
-                    </Grid>
-                    <Grid item>
-                        <Typography variant="h3">{player_info.name}</Typography>
-                        <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
-                            <Chip label={player_info.position} color="primary" />
-                            <Chip label={player_info.team_id || "Free Agent"} variant="outlined" />
-                            <Chip label={`ID: ${player_info.player_id}`} size="small" />
-                        </Box>
-                    </Grid>
-                </Grid>
-            </Paper>
+          return (
+            <Grid item xs={12} md={4} key={season.season}>
+              <Card variant="outlined" style={{ borderColor: season.season === 2025 ? '#6366f1' : '#e2e8f0' }}>
+                <CardContent>
+                  <Typography variant="h6" color="primary" gutterBottom>
+                    {season.season} Season
+                    {season.season === 2025 && <Chip label="Current" size="small" color="primary" style={{ marginLeft: 10 }} />}
+                  </Typography>
+                  
+                  {/* THE FIX: A Clean 3-Row Grid that shows EVERYTHING */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '0.9rem' }}>
+                    
+                    {/* Row 1: Passing & TDs */}
+                    <div><strong>Pass:</strong> {season.passing_yards} yds</div>
+                    <div><strong>Total TDs:</strong> {total_tds}</div>
 
-            {/* STATS GRAPH SECTION */}
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
-                    <Paper elevation={2} sx={{ p: 3 }}>
-                        <Typography variant="h5" gutterBottom>Career Performance (2023-2025)</Typography>
-                        
-                        {graphData.length > 0 ? (
-                            <Box sx={{ height: 400, width: '100%' }}>
-                                <ResponsiveContainer>
-                                    <BarChart data={graphData}>
-                                        <XAxis dataKey="season" />
-                                        <YAxis />
-                                        <Tooltip />
-                                        <Legend />
-                                        
-                                        {/* Dynamic Bars based on Position */}
-                                        {player_info.position === 'QB' && <Bar dataKey="passing_yards" name="Passing Yards" fill="#1976d2" />}
-                                        {player_info.position === 'QB' && <Bar dataKey="passing_tds" name="TDs" fill="#ff9800" />}
-                                        
-                                        {(player_info.position === 'RB' || player_info.position === 'QB') && (
-                                            <Bar dataKey="rushing_yards" name="Rushing Yards" fill="#4caf50" />
-                                        )}
-                                        
-                                        {(player_info.position === 'WR' || player_info.position === 'TE' || player_info.position === 'RB') && (
-                                            <Bar dataKey="receiving_yards" name="Receiving Yards" fill="#9c27b0" />
-                                        )}
-                                        
-                                        <Bar dataKey="fantasy_points" name="Fantasy Pts" fill="#d32f2f" />
-                                    </BarChart>
-                                </ResponsiveContainer>
-                            </Box>
-                        ) : (
-                            <Alert severity="info">No stats recorded for this player yet.</Alert>
-                        )}
-                    </Paper>
-                </Grid>
+                    {/* Row 2: Rushing & Receiving (ALWAYS SHOW BOTH) */}
+                    <div><strong>Rush:</strong> {season.rushing_yards} yds</div>
+                    <div><strong>Rec:</strong> {season.receiving_yards} yds</div>
+                    
+                    {/* Row 3: Fantasy Points (Spanning full width for emphasis) */}
+                    <div style={{ gridColumn: 'span 2', marginTop: '8px', borderTop: '1px solid #f1f5f9', paddingTop: '8px', fontWeight: 'bold' }}>
+                      Fantasy Pts: {season.fantasy_points}
+                    </div>
+
+                  </div>
+                </CardContent>
+              </Card>
             </Grid>
-        </Container>
-    );
+          );
+        })}
+      </Grid>
+    </div>
+  );
 };
 
 export default PlayerPage;
