@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,completions,attempts,passing_yards,passing_tds,interceptions,passer_rating,season,week
+Joe Burrow,BurrJo01,2025-12-21,CIN,@,MIA,"W, 45-21",25,32,309,4,0,146.5,2025,16
+Malik Willis,WillMa12,2025-12-20,GNB,@,CHI,"L, 16-22",9,11,121,1,0,142.8,2025,16
+Justin Herbert,HerbJu00,2025-12-21,LAC,@,DAL,"W, 34-17",23,29,300,2,0,132.8,2025,16
+Brock Purdy,PurdBr00,2025-12-22,SFO,@,IND,"W, 48-27",25,34,295,5,1,126.8,2025,16
+Cam Ward,WardCa00,2025-12-21,TEN,,KAN,"W, 26-9",21,28,228,2,0,122.3,2025,16

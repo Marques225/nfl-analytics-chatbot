@@ -1,49 +1,79 @@
 import React from 'react';
-import { Paper, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Avatar, Box, Divider, Chip } from '@mui/material';
 
-const ComparisonCard = ({ data }) => {
-    // data contains: { player, 2024, 2025 }
-    if (!data || !data['2024'] || !data['2025']) return null;
-
-    const stats = Object.keys(data['2025']).filter(key => 
-        key !== "season" && key !== "player_id" && key !== "team_id" && typeof data['2025'][key] === 'number'
-    );
+const StatRow = ({ label, value1, value2, highlight }) => {
+    const v1 = Number(value1) || 0;
+    const v2 = Number(value2) || 0;
+    
+    // Simple logic to bold the winner
+    const win1 = v1 > v2;
+    const win2 = v2 > v1;
 
     return (
-        <Paper elevation={3} style={{ marginTop: '10px', padding: '10px', maxWidth: '400px' }}>
-            <Typography variant="h6" align="center" style={{ marginBottom: '10px' }}>
-                {data.player.name} (2024 vs 2025)
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1, p: 0.5, bgcolor: highlight ? '#f5f5f5' : 'transparent', borderRadius: 1 }}>
+            <Typography variant="body2" sx={{ fontWeight: win1 ? 'bold' : 'normal', color: win1 ? 'green' : 'text.secondary', width: '30%', textAlign: 'left' }}>
+                {value1}
             </Typography>
-            <TableContainer>
-                <Table size="small">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell><b>Stat</b></TableCell>
-                            <TableCell align="right"><b>2024</b></TableCell>
-                            <TableCell align="right"><b>2025</b></TableCell>
-                            <TableCell align="right"><b>Diff</b></TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {stats.slice(0, 5).map((stat) => { // Show top 5 stats
-                            const val1 = data['2024'][stat] || 0;
-                            const val2 = data['2025'][stat] || 0;
-                            const diff = val2 - val1;
-                            return (
-                                <TableRow key={stat}>
-                                    <TableCell style={{ textTransform: 'capitalize' }}>{stat.replace(/_/g, ' ')}</TableCell>
-                                    <TableCell align="right">{val1}</TableCell>
-                                    <TableCell align="right">{val2}</TableCell>
-                                    <TableCell align="right" style={{ color: diff >= 0 ? 'green' : 'red' }}>
-                                        {diff > 0 ? '+' : ''}{diff}
-                                    </TableCell>
-                                </TableRow>
-                            );
-                        })}
-                    </TableBody>
-                </Table>
-            </TableContainer>
-        </Paper>
+            <Typography variant="caption" sx={{ fontWeight: 'bold', color: '#666', width: '40%', textAlign: 'center', textTransform: 'uppercase' }}>
+                {label}
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: win2 ? 'bold' : 'normal', color: win2 ? 'green' : 'text.secondary', width: '30%', textAlign: 'right' }}>
+                {value2}
+            </Typography>
+        </Box>
+    );
+};
+
+const PlayerColumn = ({ player }) => (
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Avatar 
+            src={player.headshot_url} 
+            alt={player.name}
+            sx={{ width: 60, height: 60, mb: 1, border: '2px solid #e0e0e0' }}
+        />
+        <Typography variant="subtitle2" sx={{ fontWeight: 'bold', textAlign: 'center', lineHeight: 1.2 }}>
+            {player.name}
+        </Typography>
+        <Typography variant="caption" color="textSecondary">
+            {player.position} • {player.team_id}
+        </Typography>
+    </Box>
+);
+
+const ComparisonCard = ({ player1, player2 }) => {
+    // Safety check: If data is missing, don't crash
+    if (!player1 || !player2) return null;
+
+    const s1 = player1.stats || {};
+    const s2 = player2.stats || {};
+
+    return (
+        <Card variant="outlined" sx={{ mt: 2, bgcolor: '#fff', borderRadius: 2 }}>
+            <CardContent>
+                <Typography variant="overline" display="block" align="center" sx={{ color: '#999', mb: 1 }}>
+                    2025 Head-to-Head
+                </Typography>
+                
+                {/* Players Header */}
+                <Grid container alignItems="center" spacing={1}>
+                    <Grid item xs={5}><PlayerColumn player={player1} /></Grid>
+                    <Grid item xs={2} sx={{ textAlign: 'center' }}><Typography variant="h6" color="textSecondary">VS</Typography></Grid>
+                    <Grid item xs={5}><PlayerColumn player={player2} /></Grid>
+                </Grid>
+
+                <Divider sx={{ my: 2 }} />
+
+                {/* Stats Grid */}
+                <StatRow label="Fantasy Pts" value1={s1.fantasy_points} value2={s2.fantasy_points} highlight />
+                <StatRow label="Pass Yds" value1={s1.passing_yards} value2={s2.passing_yards} />
+                <StatRow label="Pass TDs" value1={s1.passing_tds} value2={s2.passing_tds} />
+                <StatRow label="Rush Yds" value1={s1.rushing_yards} value2={s2.rushing_yards} />
+                <StatRow label="Rush TDs" value1={s1.rushing_tds} value2={s2.rushing_tds} />
+                <StatRow label="Rec Yds" value1={s1.receiving_yards} value2={s2.receiving_yards} />
+                <StatRow label="Rec TDs" value1={s1.receiving_tds} value2={s2.receiving_tds} />
+
+            </CardContent>
+        </Card>
     );
 };
 

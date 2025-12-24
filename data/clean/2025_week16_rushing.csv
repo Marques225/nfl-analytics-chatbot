@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,carries,rushing_yards,rushing_tds,season,week
+Jaylen Warren,WarrJa01,2025-12-21,PIT,@,DET,"W, 29-24",14,143,2,2025,16
+Saquon Barkley,BarkSa00,2025-12-20,PHI,@,WAS,"W, 29-18",21,132,1,2025,16
+Ashton Jeanty,JeanAs00,2025-12-21,LVR,@,HOU,"L, 21-23",24,128,1,2025,16
+Derrick Henry,HenrDe00,2025-12-21,BAL,,NWE,"L, 24-28",18,128,2,2025,16
+James Cook,CookJa01,2025-12-21,BUF,@,CLE,"W, 23-20",16,117,2,2025,16

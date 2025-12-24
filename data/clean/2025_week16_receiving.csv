@@ -1,0 +1,6 @@
+player_name,pfr_player_id,game_date,team,at_or_vs,opponent,game_outcome,receptions,receiving_yards,receiving_tds,season,week
+Puka Nacua,NacuPu00,2025-12-18,LAR,@,SEA,"L, 37-38",12,225,2,2025,16
+Chris Olave,OlavCh00,2025-12-21,NOR,,NYJ,"W, 29-6",10,148,2,2025,16
+Parker Washington,WashPa01,2025-12-21,JAX,@,DEN,"W, 34-20",6,145,1,2025,16
+Stefon Diggs,DiggSt00,2025-12-21,NWE,@,BAL,"W, 28-24",9,138,0,2025,16
+George Pickens,PickGe00,2025-12-21,DAL,,LAC,"L, 17-34",7,130,1,2025,16

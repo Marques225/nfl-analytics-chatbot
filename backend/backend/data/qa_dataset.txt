@@ -1,0 +1,200 @@
+Question: Who is Christian McCaffrey? Answer: Christian McCaffrey is a RB for the SF.
+Question: What team does Christian McCaffrey play for? Answer: Christian McCaffrey plays for the SF.
+Question: How many points did Christian McCaffrey score in 2025? Answer: Christian McCaffrey scored 374.8 fantasy points.
+Question: Who is the top RB? Answer: Christian McCaffrey is a top ranked RB.
+Question: Who is Jahmyr Gibbs? Answer: Jahmyr Gibbs is a RB for the DET.
+Question: What team does Jahmyr Gibbs play for? Answer: Jahmyr Gibbs plays for the DET.
+Question: How many points did Jahmyr Gibbs score in 2025? Answer: Jahmyr Gibbs scored 339.9 fantasy points.
+Question: Who is the top RB? Answer: Jahmyr Gibbs is a top ranked RB.
+Question: Who is Josh Allen? Answer: Josh Allen is a QB for the BUF.
+Question: What team does Josh Allen play for? Answer: Josh Allen plays for the BUF.
+Question: How many points did Josh Allen score in 2025? Answer: Josh Allen scored 339.44 fantasy points.
+Question: Who is the top QB? Answer: Josh Allen is a top ranked QB.
+Question: Who is Jonathan Taylor? Answer: Jonathan Taylor is a RB for the IND.
+Question: What team does Jonathan Taylor play for? Answer: Jonathan Taylor plays for the IND.
+Question: How many points did Jonathan Taylor score in 2025? Answer: Jonathan Taylor scored 337.0 fantasy points.
+Question: Who is the top RB? Answer: Jonathan Taylor is a top ranked RB.
+Question: Who is Puka Nacua? Answer: Puka Nacua is a WR for the LA.
+Question: What team does Puka Nacua play for? Answer: Puka Nacua plays for the LA.
+Question: How many points did Puka Nacua score in 2025? Answer: Puka Nacua scored 335.3 fantasy points.
+Question: Who is the top WR? Answer: Puka Nacua is a top ranked WR.
+Question: Who is Jaxon Smith-Njigba? Answer: Jaxon Smith-Njigba is a WR for the SEA.
+Question: What team does Jaxon Smith-Njigba play for? Answer: Jaxon Smith-Njigba plays for the SEA.
+Question: How many points did Jaxon Smith-Njigba score in 2025? Answer: Jaxon Smith-Njigba scored 331.3 fantasy points.
+Question: Who is the top WR? Answer: Jaxon Smith-Njigba is a top ranked WR.
+Question: Who is Bijan Robinson? Answer: Bijan Robinson is a RB for the ATL.
+Question: What team does Bijan Robinson play for? Answer: Bijan Robinson plays for the ATL.
+Question: How many points did Bijan Robinson score in 2025? Answer: Bijan Robinson scored 323.6 fantasy points.
+Question: Who is the top RB? Answer: Bijan Robinson is a top ranked RB.
+Question: Who is Matthew Stafford? Answer: Matthew Stafford is a QB for the LA.
+Question: What team does Matthew Stafford play for? Answer: Matthew Stafford plays for the LA.
+Question: How many points did Matthew Stafford score in 2025? Answer: Matthew Stafford scored 314.96 fantasy points.
+Question: Who is the top QB? Answer: Matthew Stafford is a top ranked QB.
+Question: Who is De'Von Achane? Answer: De'Von Achane is a RB for the MIA.
+Question: What team does De'Von Achane play for? Answer: De'Von Achane plays for the MIA.
+Question: How many points did De'Von Achane score in 2025? Answer: De'Von Achane scored 307.9 fantasy points.
+Question: Who is the top RB? Answer: De'Von Achane is a top ranked RB.
+Question: Who is Drake Maye? Answer: Drake Maye is a QB for the NE.
+Question: What team does Drake Maye play for? Answer: Drake Maye plays for the NE.
+Question: How many points did Drake Maye score in 2025? Answer: Drake Maye scored 305.78 fantasy points.
+Question: Who is the top QB? Answer: Drake Maye is a top ranked QB.
+Question: Who is Jalen Hurts? Answer: Jalen Hurts is a QB for the PHI.
+Question: What team does Jalen Hurts play for? Answer: Jalen Hurts plays for the PHI.
+Question: How many points did Jalen Hurts score in 2025? Answer: Jalen Hurts scored 294.16 fantasy points.
+Question: Who is the top QB? Answer: Jalen Hurts is a top ranked QB.
+Question: Who is Trevor Lawrence? Answer: Trevor Lawrence is a QB for the JAX.
+Question: What team does Trevor Lawrence play for? Answer: Trevor Lawrence plays for the JAX.
+Question: How many points did Trevor Lawrence score in 2025? Answer: Trevor Lawrence scored 293.76 fantasy points.
+Question: Who is the top QB? Answer: Trevor Lawrence is a top ranked QB.
+Question: Who is James Cook? Answer: James Cook is a RB for the BUF.
+Question: What team does James Cook play for? Answer: James Cook plays for the BUF.
+Question: How many points did James Cook score in 2025? Answer: James Cook scored 292.0 fantasy points.
+Question: Who is the top RB? Answer: James Cook is a top ranked RB.
+Question: Who is Dak Prescott? Answer: Dak Prescott is a QB for the DAL.
+Question: What team does Dak Prescott play for? Answer: Dak Prescott plays for the DAL.
+Question: How many points did Dak Prescott score in 2025? Answer: Dak Prescott scored 286.4 fantasy points.
+Question: Who is the top QB? Answer: Dak Prescott is a top ranked QB.
+Question: Who is Amon-Ra St. Brown? Answer: Amon-Ra St. Brown is a WR for the DET.
+Question: What team does Amon-Ra St. Brown play for? Answer: Amon-Ra St. Brown plays for the DET.
+Question: How many points did Amon-Ra St. Brown score in 2025? Answer: Amon-Ra St. Brown scored 284.3 fantasy points.
+Question: Who is the top WR? Answer: Amon-Ra St. Brown is a top ranked WR.
+Question: Who is Jared Goff? Answer: Jared Goff is a QB for the DET.
+Question: What team does Jared Goff play for? Answer: Jared Goff plays for the DET.
+Question: How many points did Jared Goff score in 2025? Answer: Jared Goff scored 283.74 fantasy points.
+Question: Who is the top QB? Answer: Jared Goff is a top ranked QB.
+Question: Who is Patrick Mahomes? Answer: Patrick Mahomes is a QB for the KC.
+Question: What team does Patrick Mahomes play for? Answer: Patrick Mahomes plays for the KC.
+Question: How many points did Patrick Mahomes score in 2025? Answer: Patrick Mahomes scored 281.68 fantasy points.
+Question: Who is the top QB? Answer: Patrick Mahomes is a top ranked QB.
+Question: Who is Caleb Williams? Answer: Caleb Williams is a QB for the CHI.
+Question: What team does Caleb Williams play for? Answer: Caleb Williams plays for the CHI.
+Question: How many points did Caleb Williams score in 2025? Answer: Caleb Williams scored 280.6 fantasy points.
+Question: Who is the top QB? Answer: Caleb Williams is a top ranked QB.
+Question: Who is Trey McBride? Answer: Trey McBride is a TE for the ARI.
+Question: What team does Trey McBride play for? Answer: Trey McBride plays for the ARI.
+Question: How many points did Trey McBride score in 2025? Answer: Trey McBride scored 278.8 fantasy points.
+Question: Who is the top TE? Answer: Trey McBride is a top ranked TE.
+Question: Who is George Pickens? Answer: George Pickens is a WR for the DAL.
+Question: What team does George Pickens play for? Answer: George Pickens plays for the DAL.
+Question: How many points did George Pickens score in 2025? Answer: George Pickens scored 276.2 fantasy points.
+Question: Who is the top WR? Answer: George Pickens is a top ranked WR.
+Question: Who is Justin Herbert? Answer: Justin Herbert is a QB for the LAC.
+Question: What team does Justin Herbert play for? Answer: Justin Herbert plays for the LAC.
+Question: How many points did Justin Herbert score in 2025? Answer: Justin Herbert scored 271.74 fantasy points.
+Question: Who is the top QB? Answer: Justin Herbert is a top ranked QB.
+Question: Who is Bo Nix? Answer: Bo Nix is a QB for the DEN.
+Question: What team does Bo Nix play for? Answer: Bo Nix plays for the DEN.
+Question: How many points did Bo Nix score in 2025? Answer: Bo Nix scored 268.82 fantasy points.
+Question: Who is the top QB? Answer: Bo Nix is a top ranked QB.
+Question: Who is Ja'Marr Chase? Answer: Ja'Marr Chase is a WR for the CIN.
+Question: What team does Ja'Marr Chase play for? Answer: Ja'Marr Chase plays for the CIN.
+Question: How many points did Ja'Marr Chase score in 2025? Answer: Ja'Marr Chase scored 267.0 fantasy points.
+Question: Who is the top WR? Answer: Ja'Marr Chase is a top ranked WR.
+Question: Who is Chris Olave? Answer: Chris Olave is a WR for the NO.
+Question: What team does Chris Olave play for? Answer: Chris Olave plays for the NO.
+Question: How many points did Chris Olave score in 2025? Answer: Chris Olave scored 242.1 fantasy points.
+Question: Who is the top WR? Answer: Chris Olave is a top ranked WR.
+Question: Who is Baker Mayfield? Answer: Baker Mayfield is a QB for the TB.
+Question: What team does Baker Mayfield play for? Answer: Baker Mayfield plays for the TB.
+Question: How many points did Baker Mayfield score in 2025? Answer: Baker Mayfield scored 241.26 fantasy points.
+Question: Who is the top QB? Answer: Baker Mayfield is a top ranked QB.
+Question: Who is Travis Etienne? Answer: Travis Etienne is a RB for the JAX.
+Question: What team does Travis Etienne play for? Answer: Travis Etienne plays for the JAX.
+Question: How many points did Travis Etienne score in 2025? Answer: Travis Etienne scored 237.9 fantasy points.
+Question: Who is the top RB? Answer: Travis Etienne is a top ranked RB.
+Question: Who is Kyren Williams? Answer: Kyren Williams is a RB for the LA.
+Question: What team does Kyren Williams play for? Answer: Kyren Williams plays for the LA.
+Question: How many points did Kyren Williams score in 2025? Answer: Kyren Williams scored 236.2 fantasy points.
+Question: Who is the top RB? Answer: Kyren Williams is a top ranked RB.
+Question: Who is Josh Jacobs? Answer: Josh Jacobs is a RB for the GB.
+Question: What team does Josh Jacobs play for? Answer: Josh Jacobs plays for the GB.
+Question: How many points did Josh Jacobs score in 2025? Answer: Josh Jacobs scored 235.8 fantasy points.
+Question: Who is the top RB? Answer: Josh Jacobs is a top ranked RB.
+Question: Who is Jordan Love? Answer: Jordan Love is a QB for the GB.
+Question: What team does Jordan Love play for? Answer: Jordan Love plays for the GB.
+Question: How many points did Jordan Love score in 2025? Answer: Jordan Love scored 235.14 fantasy points.
+Question: Who is the top QB? Answer: Jordan Love is a top ranked QB.
+Question: Who is Javonte Williams? Answer: Javonte Williams is a RB for the DAL.
+Question: What team does Javonte Williams play for? Answer: Javonte Williams plays for the DAL.
+Question: How many points did Javonte Williams score in 2025? Answer: Javonte Williams scored 233.4 fantasy points.
+Question: Who is the top RB? Answer: Javonte Williams is a top ranked RB.
+Question: Who is Chase Brown? Answer: Chase Brown is a RB for the CIN.
+Question: What team does Chase Brown play for? Answer: Chase Brown plays for the CIN.
+Question: How many points did Chase Brown score in 2025? Answer: Chase Brown scored 230.8 fantasy points.
+Question: Who is the top RB? Answer: Chase Brown is a top ranked RB.
+Question: Who is Daniel Jones? Answer: Daniel Jones is a QB for the IND.
+Question: What team does Daniel Jones play for? Answer: Daniel Jones plays for the IND.
+Question: How many points did Daniel Jones score in 2025? Answer: Daniel Jones scored 230.14 fantasy points.
+Question: Who is the top QB? Answer: Daniel Jones is a top ranked QB.
+Question: Who is Saquon Barkley? Answer: Saquon Barkley is a RB for the PHI.
+Question: What team does Saquon Barkley play for? Answer: Saquon Barkley plays for the PHI.
+Question: How many points did Saquon Barkley score in 2025? Answer: Saquon Barkley scored 225.5 fantasy points.
+Question: Who is the top RB? Answer: Saquon Barkley is a top ranked RB.
+Question: Who is Sam Darnold? Answer: Sam Darnold is a QB for the SEA.
+Question: What team does Sam Darnold play for? Answer: Sam Darnold plays for the SEA.
+Question: How many points did Sam Darnold score in 2025? Answer: Sam Darnold scored 224.52 fantasy points.
+Question: Who is the top QB? Answer: Sam Darnold is a top ranked QB.
+Question: Who is Ashton Jeanty? Answer: Ashton Jeanty is a RB for the LV.
+Question: What team does Ashton Jeanty play for? Answer: Ashton Jeanty plays for the LV.
+Question: How many points did Ashton Jeanty score in 2025? Answer: Ashton Jeanty scored 223.4 fantasy points.
+Question: Who is the top RB? Answer: Ashton Jeanty is a top ranked RB.
+Question: Who is Davante Adams? Answer: Davante Adams is a WR for the LA.
+Question: What team does Davante Adams play for? Answer: Davante Adams plays for the LA.
+Question: How many points did Davante Adams score in 2025? Answer: Davante Adams scored 222.9 fantasy points.
+Question: Who is the top WR? Answer: Davante Adams is a top ranked WR.
+Question: Who is Derrick Henry? Answer: Derrick Henry is a RB for the BAL.
+Question: What team does Derrick Henry play for? Answer: Derrick Henry plays for the BAL.
+Question: How many points did Derrick Henry score in 2025? Answer: Derrick Henry scored 221.3 fantasy points.
+Question: Who is the top RB? Answer: Derrick Henry is a top ranked RB.
+Question: Who is Nico Collins? Answer: Nico Collins is a WR for the HOU.
+Question: What team does Nico Collins play for? Answer: Nico Collins plays for the HOU.
+Question: How many points did Nico Collins score in 2025? Answer: Nico Collins scored 217.5 fantasy points.
+Question: Who is the top WR? Answer: Nico Collins is a top ranked WR.
+Question: Who is A.J. Brown? Answer: A.J. Brown is a WR for the PHI.
+Question: What team does A.J. Brown play for? Answer: A.J. Brown plays for the PHI.
+Question: How many points did A.J. Brown score in 2025? Answer: A.J. Brown scored 208.5 fantasy points.
+Question: Who is the top WR? Answer: A.J. Brown is a top ranked WR.
+Question: Who is Courtland Sutton? Answer: Courtland Sutton is a WR for the DEN.
+Question: What team does Courtland Sutton play for? Answer: Courtland Sutton plays for the DEN.
+Question: How many points did Courtland Sutton score in 2025? Answer: Courtland Sutton scored 208.2 fantasy points.
+Question: Who is the top WR? Answer: Courtland Sutton is a top ranked WR.
+Question: Who is Zay Flowers? Answer: Zay Flowers is a WR for the BAL.
+Question: What team does Zay Flowers play for? Answer: Zay Flowers plays for the BAL.
+Question: How many points did Zay Flowers score in 2025? Answer: Zay Flowers scored 206.5 fantasy points.
+Question: Who is the top WR? Answer: Zay Flowers is a top ranked WR.
+Question: Who is Rico Dowdle? Answer: Rico Dowdle is a RB for the CAR.
+Question: What team does Rico Dowdle play for? Answer: Rico Dowdle plays for the CAR.
+Question: How many points did Rico Dowdle score in 2025? Answer: Rico Dowdle scored 204.0 fantasy points.
+Question: Who is the top RB? Answer: Rico Dowdle is a top ranked RB.
+Question: Who is Aaron Rodgers? Answer: Aaron Rodgers is a QB for the PIT.
+Question: What team does Aaron Rodgers play for? Answer: Aaron Rodgers plays for the PIT.
+Question: How many points did Aaron Rodgers score in 2025? Answer: Aaron Rodgers scored 202.0 fantasy points.
+Question: Who is the top QB? Answer: Aaron Rodgers is a top ranked QB.
+Question: Who is D'Andre Swift? Answer: D'Andre Swift is a RB for the CHI.
+Question: What team does D'Andre Swift play for? Answer: D'Andre Swift plays for the CHI.
+Question: How many points did D'Andre Swift score in 2025? Answer: D'Andre Swift scored 200.9 fantasy points.
+Question: Who is the top RB? Answer: D'Andre Swift is a top ranked RB.
+Question: Who is Jameson Williams? Answer: Jameson Williams is a WR for the DET.
+Question: What team does Jameson Williams play for? Answer: Jameson Williams plays for the DET.
+Question: How many points did Jameson Williams score in 2025? Answer: Jameson Williams scored 200.0 fantasy points.
+Question: Who is the top WR? Answer: Jameson Williams is a top ranked WR.
+Question: Who is Tetairoa McMillan? Answer: Tetairoa McMillan is a WR for the CAR.
+Question: What team does Tetairoa McMillan play for? Answer: Tetairoa McMillan plays for the CAR.
+Question: How many points did Tetairoa McMillan score in 2025? Answer: Tetairoa McMillan scored 199.4 fantasy points.
+Question: Who is the top WR? Answer: Tetairoa McMillan is a top ranked WR.
+Question: Who is Jacoby Brissett? Answer: Jacoby Brissett is a QB for the ARI.
+Question: What team does Jacoby Brissett play for? Answer: Jacoby Brissett plays for the ARI.
+Question: How many points did Jacoby Brissett score in 2025? Answer: Jacoby Brissett scored 199.34 fantasy points.
+Question: Who is the top QB? Answer: Jacoby Brissett is a top ranked QB.
+Question: Who is Lamar Jackson? Answer: Lamar Jackson is a QB for the BAL.
+Question: What team does Lamar Jackson play for? Answer: Lamar Jackson plays for the BAL.
+Question: How many points did Lamar Jackson score in 2025? Answer: Lamar Jackson scored 198.44 fantasy points.
+Question: Who is the top QB? Answer: Lamar Jackson is a top ranked QB.
+Question: Who is Jaxson Dart? Answer: Jaxson Dart is a QB for the NYG.
+Question: What team does Jaxson Dart play for? Answer: Jaxson Dart plays for the NYG.
+Question: How many points did Jaxson Dart score in 2025? Answer: Jaxson Dart scored 196.1 fantasy points.
+Question: Who is the top QB? Answer: Jaxson Dart is a top ranked QB.
+Question: Who is Jaylen Warren? Answer: Jaylen Warren is a RB for the PIT.
+Question: What team does Jaylen Warren play for? Answer: Jaylen Warren plays for the PIT.
+Question: How many points did Jaylen Warren score in 2025? Answer: Jaylen Warren scored 195.8 fantasy points.
+Question: Who is the top RB? Answer: Jaylen Warren is a top ranked RB.
