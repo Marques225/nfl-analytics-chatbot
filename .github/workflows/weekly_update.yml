@@ -1,0 +1,31 @@
+name: Weekly NFL Data Refresh
+
+on:
+  schedule:
+    # Run at 03:00 AM UTC every Tuesday (After Monday Night Football)
+    - cron: '0 3 * * 2'
+  workflow_dispatch: # Allows manual trigger button in GitHub
+
+jobs:
+  refresh_data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install Dependencies
+      run: |
+        pip install pandas sqlalchemy psycopg2-binary python-dotenv pyarrow fastparquet
+
+    - name: Run ETL Script
+      env:
+        # This connects to your Secrets setting in GitHub
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      run: |
+        python backend/etl/run_etl.py
